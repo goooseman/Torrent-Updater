@@ -10,9 +10,7 @@
             <sparkle:releaseNotesLink>
                 http://torrent-updater.goooseman.ru/release-notes/2-0.html
             </sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink xml:lang="ru">
-                http://torrent-updater.goooseman.ru/ru/release-notes/2-0.html
-            </sparkle:releaseNotesLink>
+
             <pubDate>Wed, 26 Mar 20014 19:20:11 +0000</pubDate>
             <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-1.zip" sparkle:version="2.1" length="1623481" type="application/octet-stream" />
         </item>
