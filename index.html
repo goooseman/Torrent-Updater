@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Redirecting...</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Torrent Updater</title>
-    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript">
+    var langcodes = new Array('ru', 'en', 'default');
+    var langredirects = new Array('/ru/', '/en/', '/en/');
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+    var languageinfo = navigator.language ? navigator.language : navigator.userLanguage;
+    var gotodefault = 1;
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    function redirectpage(dest) {
+      // if (window.location.replace)
+      //   window.location.replace(dest);
+      // else
+      //   window.location = dest;
+      console.log(dest);
+      window.location.href = dest;
+    }
 
-</head>
+    for (i = 0; i < langcodes.length - 1; i++) {
+      if (languageinfo.substr(0, 2) == langcodes[i]) {
+        redirectpage(langredirects[i]);
+        gotodefault = 0;
+        break;
+      }
+    }
 
-<body>
-    
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-</body>
-
-
+    if (gotodefault)
+      redirectpage(langredirects[langcodes.length - 1]);
+    </script>
+  </head>
 </html>

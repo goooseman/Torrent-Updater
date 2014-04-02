@@ -1,1 +1,168 @@
-
+a, a:focus, a:hover {
+    color: #fff;
+}
+.btn-default, .btn-default:hover, .btn-default:focus {
+    color: #333;
+    text-shadow: none;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.btn-success.btn-lg {
+    width: 230px;
+}
+.btn-success.btn-lg .fa {
+    margin-top: 9px;
+}
+.btn-warning.btn-lg {
+    width: 230px;
+}
+.btn-warning.btn-lg .fa {
+    margin-top: 7px;
+}
+.lead.small-margin {
+    margin-bottom: 5px;
+}
+h1.big-margin {
+    margin-bottom: 30px;
+}
+ul.lead {
+    padding-left: 0;
+}
+ul.lead li {
+    
+    position: relative;
+    display: inline-block;
+}
+ul.lead li .fa {
+    position: absolute;
+    left: -24px;
+    top: 7px;
+    font-size: 15px;
+}
+.inner.cover .lead a, .inner.cover .lead a:focus, .inner.cover .lead a:hover {
+    color: #428bca;
+}
+html, body {
+    height: 100%;
+    background-color: #333;
+}
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+}
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    /* For at least Firefox */
+    min-height: 100%;
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+.inner {
+    padding: 30px;
+    padding-bottom: 0;
+}
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.masthead-nav > li {
+    display: inline-block;
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    /* IE8 proofing */
+    color: rgba(255, 255, 255, .75);
+    border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+.masthead-nav > .active > a, .masthead-nav > .active > a:hover, .masthead-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
+}
+.cover {
+    padding: 0 20px;
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.mastfoot {
+    color: #999;
+    /* IE8 proofing */
+    color: rgba(255, 255, 255, .5);
+}
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead, .mastfoot, .cover-container {
+        width: 100%;
+        /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+@media (min-width: 992px) {
+    .masthead, .mastfoot, .cover-container {
+        width: 800px;
+    }
+}
+#carbonads-container {
+    display:none
+}
+h1[id] {
+    padding-top:0px;
+    margin-top:20px
+}
+.bs-old-docs {
+    display:none
+}
+.bs-social {
+    display:none
+}
+.col-md-3 {
+    display:none !important
+}
+.col-md-9 {
+    width:100% !important
+}
+.navbar-fixed-top {
+    position:absolute !important
+}
