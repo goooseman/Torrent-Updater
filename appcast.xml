@@ -14,7 +14,7 @@
                 http://torrent-updater.goooseman.ru/ru/release-notes/2-0.html
             </sparkle:releaseNotesLink>
             <pubDate>Wed, 26 Mar 20014 19:20:11 +0000</pubDate>
-            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-0.zip" sparkle:version="2.0" length="583160" sparkle:dsaSignature="MC4CFQCthmHWBJdp6MhYLuF/fXORu9bNiAIVAK9+NP/emBv1SPiQAfZIFtP59647" type="application/octet-stream" />
+            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-0.zip" sparkle:version="2.0" length="1653588" sparkle:dsaSignature="MC0CFGKO7MA1O83arHxirHr5zJDjcZIPAhUAlzjMQ0elJjKIELyuNUbSplIgkIg=" type="application/octet-stream" />
         </item>
     </channel>
 </rss>

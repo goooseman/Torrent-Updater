@@ -166,3 +166,8 @@ h1[id] {
 .navbar-fixed-top {
     position:absolute !important
 }
+
+.screenshot img {
+   height: 200px;
+}
+
