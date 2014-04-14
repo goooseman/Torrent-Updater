@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Torrent Updater
+
+  Created by Alexander Gusev on 29/03/14.
+  Copyright (c) 2014 Alexander Gusev. All rights reserved.
+*/
+"Last Modified" = "'Последнее изменение:' dd MMM yyyy 'в' HH:mm";
+"Last Updated" = "'Последнее обновление:' dd MMM yyyy 'в' HH:mm";
+"Never Updated" = "Никогда не обнволялось";
+"Updating All Torrents" = "Обновляю торренты...";
+"Updating" = "Обновляю...";
+"Preferences" = "Настройки";
+"Adding Torrent" = "Добавляю торрент...";
+"Contact Author" = "Связаться с автором";
+"Dublicate Torrent" = "Этот торрент уже есть в базе";
+"Wrong Torrent Number" = "Неправильный номер торрента";
+"Something Went Wrong" = "Что-то пошло не так...";
+"Notification: Torrent Updated" = "Торрент обновлён";
+"No Internet Connection" = "Остутствует интернет подключение";
+"Login Failed" = "Проблема с логином на трекере %@, залогиньтесь в Safari";
+"General" = "Основные";
+"Auto Update" = "Автообновление";

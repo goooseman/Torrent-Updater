@@ -7,17 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1FC16118DD7404006BC200 /* GSTorrUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1FC16018DD7404006BC200 /* GSTorrUpdate.m */; };
+		DF1FC16418DD9CC8006BC200 /* GSTorrDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1FC16318DD9CC8006BC200 /* GSTorrDownload.m */; };
+		DF35600518E4252400216015 /* GSUpdateSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DF35600318E4252400216015 /* GSUpdateSettings.m */; };
+		DF3AF8EF18E3F60700D018D0 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = DF3AF8EE18E3F60700D018D0 /* dsa_pub.pem */; };
+		DF46AC6C18D85D0500DDC32B /* GSGeneralSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DF46AC6A18D85D0500DDC32B /* GSGeneralSettings.m */; };
+		DF46AC6F18D8896000DDC32B /* defaultPrefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF46AC6E18D8896000DDC32B /* defaultPrefs.plist */; };
+		DF46AC7318D891D200DDC32B /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF46AC7218D891D200DDC32B /* LaunchAtLoginController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DF6B53CE18D81F76009EA59E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B53CD18D81F76009EA59E /* Cocoa.framework */; };
 		DF6B53D818D81F76009EA59E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF6B53D618D81F76009EA59E /* InfoPlist.strings */; };
 		DF6B53DA18D81F76009EA59E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6B53D918D81F76009EA59E /* main.m */; };
-		DF6B53DE18D81F76009EA59E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DF6B53DC18D81F76009EA59E /* Credits.rtf */; };
 		DF6B53E118D81F76009EA59E /* GSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6B53E018D81F76009EA59E /* GSAppDelegate.m */; };
-		DF6B53E418D81F76009EA59E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF6B53E218D81F76009EA59E /* MainMenu.xib */; };
 		DF6B53E618D81F76009EA59E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6B53E518D81F76009EA59E /* Images.xcassets */; };
 		DF6B53ED18D81F76009EA59E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B53EC18D81F76009EA59E /* XCTest.framework */; };
 		DF6B53EE18D81F76009EA59E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B53CD18D81F76009EA59E /* Cocoa.framework */; };
 		DF6B53F618D81F76009EA59E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF6B53F418D81F76009EA59E /* InfoPlist.strings */; };
 		DF6B53F818D81F76009EA59E /* Torrent_UpdaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6B53F718D81F76009EA59E /* Torrent_UpdaterTests.m */; };
+		DF6B542818D84DCD009EA59E /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF6B542118D84DCD009EA59E /* MASPreferencesWindow.xib */; };
+		DF6B542918D84DCD009EA59E /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6B542318D84DCD009EA59E /* MASPreferencesWindowController.m */; };
+		DF6E236118DB486F008F7600 /* GSTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E236018DB486F008F7600 /* GSTimerController.m */; };
+		DF6E236518DB52D4008F7600 /* GSTorrCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E236418DB52D4008F7600 /* GSTorrCheck.m */; };
+		DF6E236A18DB53D4008F7600 /* GSSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E236918DB53D4008F7600 /* GSSettings.m */; };
+		DF6E236C18DB5505008F7600 /* trackers.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF6E236B18DB5505008F7600 /* trackers.plist */; };
+		DF6E236F18DC0AB1008F7600 /* GSTorrAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E236E18DC0AB1008F7600 /* GSTorrAdd.m */; };
+		DF6E237218DC0E6D008F7600 /* GSExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E237118DC0E6D008F7600 /* GSExtra.m */; };
+		DF6E237518DC46F8008F7600 /* GSNumberTextFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E237418DC46F8008F7600 /* GSNumberTextFormatter.m */; };
+		DF6E237B18DC4EA1008F7600 /* GSTorrentsGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E237A18DC4EA1008F7600 /* GSTorrentsGetter.m */; };
+		DF6E237E18DC4F80008F7600 /* GSTorrentsSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E237D18DC4F80008F7600 /* GSTorrentsSetter.m */; };
+		DFA0D49918DEAC8E00CAE963 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0D49818DEAC8E00CAE963 /* QuartzCore.framework */; };
+		DFA0D49F18DEC44500CAE963 /* GSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA0D49E18DEC44500CAE963 /* GSAdditions.m */; };
+		DFA10AE318E6AED700CB5275 /* GSShowDockController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA10AE218E6AED700CB5275 /* GSShowDockController.m */; };
+		DFA10AE818E6AF0600CB5275 /* GSDownloadLocationEnabledController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA10AE518E6AF0600CB5275 /* GSDownloadLocationEnabledController.m */; };
+		DFA10AE918E6AF0600CB5275 /* GSStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA10AE718E6AF0600CB5275 /* GSStatusItemController.m */; };
+		DFA10AEC18E6B1EA00CB5275 /* GSHyperlinkTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA10AEB18E6B1EA00CB5275 /* GSHyperlinkTextField.m */; };
+		DFAF817618E4474E009866BA /* GSAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAF817518E4474E009866BA /* GSAnalytics.m */; };
+		DFAF817718E44D1D009866BA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0D49A18DEAD0000CAE963 /* IOKit.framework */; };
+		DFBE38F618E6D12200734B84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFBE38F818E6D12200734B84 /* Localizable.strings */; };
+		DFBE38FC18E6D1CE00734B84 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBE38FB18E6D1CE00734B84 /* Sparkle.framework */; };
+		DFBE38FD18E6D76C00734B84 /* GSGeneralSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE38FF18E6D76C00734B84 /* GSGeneralSettings.xib */; };
+		DFBE390618E6D91600734B84 /* GSUpdateSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE390818E6D91600734B84 /* GSUpdateSettings.xib */; };
+		DFBE391118E6DB1500734B84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE391318E6DB1500734B84 /* MainMenu.xib */; };
+		DFBE391918E6DF6C00734B84 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DFBE38FB18E6D1CE00734B84 /* Sparkle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +60,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DF355FFE18E3F98E00216015 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFBE391918E6DF6C00734B84 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DF1FC15F18DD7404006BC200 /* GSTorrUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTorrUpdate.h; path = Models/Torrent/GSTorrUpdate.h; sourceTree = "<group>"; };
+		DF1FC16018DD7404006BC200 /* GSTorrUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTorrUpdate.m; path = Models/Torrent/GSTorrUpdate.m; sourceTree = "<group>"; };
+		DF1FC16218DD9CC8006BC200 /* GSTorrDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTorrDownload.h; path = Models/Common/GSTorrDownload.h; sourceTree = "<group>"; };
+		DF1FC16318DD9CC8006BC200 /* GSTorrDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTorrDownload.m; path = Models/Common/GSTorrDownload.m; sourceTree = "<group>"; };
+		DF35600218E4252400216015 /* GSUpdateSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUpdateSettings.h; path = Preferences/GSUpdateSettings.h; sourceTree = "<group>"; };
+		DF35600318E4252400216015 /* GSUpdateSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSUpdateSettings.m; path = Preferences/GSUpdateSettings.m; sourceTree = "<group>"; };
+		DF3AF8EE18E3F60700D018D0 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		DF46AC6918D85D0500DDC32B /* GSGeneralSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSGeneralSettings.h; path = Preferences/GSGeneralSettings.h; sourceTree = "<group>"; };
+		DF46AC6A18D85D0500DDC32B /* GSGeneralSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSGeneralSettings.m; path = Preferences/GSGeneralSettings.m; sourceTree = "<group>"; };
+		DF46AC6E18D8896000DDC32B /* defaultPrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaultPrefs.plist; sourceTree = "<group>"; };
+		DF46AC7118D891D200DDC32B /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		DF46AC7218D891D200DDC32B /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
 		DF6B53CA18D81F76009EA59E /* Torrent Updater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Torrent Updater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6B53CD18D81F76009EA59E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DF6B53D018D81F76009EA59E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -40,16 +95,60 @@
 		DF6B53D718D81F76009EA59E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF6B53D918D81F76009EA59E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF6B53DB18D81F76009EA59E /* Torrent Updater-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Torrent Updater-Prefix.pch"; sourceTree = "<group>"; };
-		DF6B53DD18D81F76009EA59E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		DF6B53DF18D81F76009EA59E /* GSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAppDelegate.h; sourceTree = "<group>"; };
 		DF6B53E018D81F76009EA59E /* GSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAppDelegate.m; sourceTree = "<group>"; };
-		DF6B53E318D81F76009EA59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DF6B53E518D81F76009EA59E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF6B53EB18D81F76009EA59E /* Torrent UpdaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Torrent UpdaterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6B53EC18D81F76009EA59E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DF6B53F318D81F76009EA59E /* Torrent UpdaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Torrent UpdaterTests-Info.plist"; sourceTree = "<group>"; };
 		DF6B53F518D81F76009EA59E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF6B53F718D81F76009EA59E /* Torrent_UpdaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Torrent_UpdaterTests.m; sourceTree = "<group>"; };
+		DF6B540218D823FA009EA59E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF6B540418D823FA009EA59E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF6B542018D84DCD009EA59E /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesViewController.h; sourceTree = "<group>"; };
+		DF6B542118D84DCD009EA59E /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		DF6B542218D84DCD009EA59E /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		DF6B542318D84DCD009EA59E /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPreferencesWindowController.m; sourceTree = "<group>"; };
+		DF6E235F18DB486F008F7600 /* GSTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTimerController.h; sourceTree = "<group>"; };
+		DF6E236018DB486F008F7600 /* GSTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTimerController.m; sourceTree = "<group>"; };
+		DF6E236318DB52D4008F7600 /* GSTorrCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTorrCheck.h; path = Models/Torrent/GSTorrCheck.h; sourceTree = "<group>"; };
+		DF6E236418DB52D4008F7600 /* GSTorrCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTorrCheck.m; path = Models/Torrent/GSTorrCheck.m; sourceTree = "<group>"; };
+		DF6E236818DB53D4008F7600 /* GSSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSettings.h; sourceTree = "<group>"; };
+		DF6E236918DB53D4008F7600 /* GSSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSettings.m; sourceTree = "<group>"; };
+		DF6E236B18DB5505008F7600 /* trackers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = trackers.plist; sourceTree = "<group>"; };
+		DF6E236D18DC0AB1008F7600 /* GSTorrAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTorrAdd.h; path = Models/Torrent/GSTorrAdd.h; sourceTree = "<group>"; };
+		DF6E236E18DC0AB1008F7600 /* GSTorrAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTorrAdd.m; path = Models/Torrent/GSTorrAdd.m; sourceTree = "<group>"; };
+		DF6E237018DC0E6D008F7600 /* GSExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSExtra.h; sourceTree = "<group>"; };
+		DF6E237118DC0E6D008F7600 /* GSExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSExtra.m; sourceTree = "<group>"; };
+		DF6E237318DC46F8008F7600 /* GSNumberTextFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNumberTextFormatter.h; sourceTree = "<group>"; };
+		DF6E237418DC46F8008F7600 /* GSNumberTextFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNumberTextFormatter.m; sourceTree = "<group>"; };
+		DF6E237918DC4EA1008F7600 /* GSTorrentsGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTorrentsGetter.h; path = Models/Torrent/GSTorrentsGetter.h; sourceTree = "<group>"; };
+		DF6E237A18DC4EA1008F7600 /* GSTorrentsGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTorrentsGetter.m; path = Models/Torrent/GSTorrentsGetter.m; sourceTree = "<group>"; };
+		DF6E237C18DC4F80008F7600 /* GSTorrentsSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTorrentsSetter.h; path = Models/Torrent/GSTorrentsSetter.h; sourceTree = "<group>"; };
+		DF6E237D18DC4F80008F7600 /* GSTorrentsSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTorrentsSetter.m; path = Models/Torrent/GSTorrentsSetter.m; sourceTree = "<group>"; };
+		DFA0D49818DEAC8E00CAE963 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DFA0D49A18DEAD0000CAE963 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		DFA0D49D18DEC44500CAE963 /* GSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAdditions.h; sourceTree = "<group>"; };
+		DFA0D49E18DEC44500CAE963 /* GSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAdditions.m; sourceTree = "<group>"; };
+		DFA10AE118E6AED700CB5275 /* GSShowDockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSShowDockController.h; path = Preferences/Controllers/GSShowDockController.h; sourceTree = "<group>"; };
+		DFA10AE218E6AED700CB5275 /* GSShowDockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSShowDockController.m; path = Preferences/Controllers/GSShowDockController.m; sourceTree = "<group>"; };
+		DFA10AE418E6AF0600CB5275 /* GSDownloadLocationEnabledController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSDownloadLocationEnabledController.h; path = Preferences/Controllers/GSDownloadLocationEnabledController.h; sourceTree = "<group>"; };
+		DFA10AE518E6AF0600CB5275 /* GSDownloadLocationEnabledController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSDownloadLocationEnabledController.m; path = Preferences/Controllers/GSDownloadLocationEnabledController.m; sourceTree = "<group>"; };
+		DFA10AE618E6AF0600CB5275 /* GSStatusItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSStatusItemController.h; path = Preferences/Controllers/GSStatusItemController.h; sourceTree = "<group>"; };
+		DFA10AE718E6AF0600CB5275 /* GSStatusItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSStatusItemController.m; path = Preferences/Controllers/GSStatusItemController.m; sourceTree = "<group>"; };
+		DFA10AEA18E6B1EA00CB5275 /* GSHyperlinkTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSHyperlinkTextField.h; sourceTree = "<group>"; };
+		DFA10AEB18E6B1EA00CB5275 /* GSHyperlinkTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSHyperlinkTextField.m; sourceTree = "<group>"; };
+		DFAF817418E4474E009866BA /* GSAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAnalytics.h; sourceTree = "<group>"; };
+		DFAF817518E4474E009866BA /* GSAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAnalytics.m; sourceTree = "<group>"; };
+		DFBE38F918E6D12700734B84 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFBE38FA18E6D12800734B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFBE38FB18E6D1CE00734B84 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "Torrent Updater/External/Sparkle.framework"; sourceTree = "<group>"; };
+		DFBE390418E6D78400734B84 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/GSGeneralSettings.xib; sourceTree = "<group>"; };
+		DFBE390518E6D78A00734B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GSGeneralSettings.xib; sourceTree = "<group>"; };
+		DFBE390B18E6D92100734B84 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/GSUpdateSettings.xib; sourceTree = "<group>"; };
+		DFBE390E18E6D92500734B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GSUpdateSettings.xib; sourceTree = "<group>"; };
+		DFBE391618E6DB2500734B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DFE5163E18E6E3FA005DCDC1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +156,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAF817718E44D1D009866BA /* IOKit.framework in Frameworks */,
+				DFA0D49918DEAC8E00CAE963 /* QuartzCore.framework in Frameworks */,
+				DFBE38FC18E6D1CE00734B84 /* Sparkle.framework in Frameworks */,
 				DF6B53CE18D81F76009EA59E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +175,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF46AC7018D891D200DDC32B /* LaunchAtLogin */ = {
+			isa = PBXGroup;
+			children = (
+				DF46AC7118D891D200DDC32B /* LaunchAtLoginController.h */,
+				DF46AC7218D891D200DDC32B /* LaunchAtLoginController.m */,
+			);
+			path = LaunchAtLogin;
+			sourceTree = "<group>";
+		};
 		DF6B53C118D81F76009EA59E = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +206,9 @@
 		DF6B53CC18D81F76009EA59E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFBE38FB18E6D1CE00734B84 /* Sparkle.framework */,
+				DFA0D49A18DEAD0000CAE963 /* IOKit.framework */,
+				DFA0D49818DEAC8E00CAE963 /* QuartzCore.framework */,
 				DF6B53CD18D81F76009EA59E /* Cocoa.framework */,
 				DF6B53EC18D81F76009EA59E /* XCTest.framework */,
 				DF6B53CF18D81F76009EA59E /* Other Frameworks */,
@@ -115,10 +229,13 @@
 		DF6B53D318D81F76009EA59E /* Torrent Updater */ = {
 			isa = PBXGroup;
 			children = (
+				DF6B542B18D84E04009EA59E /* Preferences */,
+				DF6B540D18D84965009EA59E /* External */,
+				DF6B540718D844AC009EA59E /* Models */,
 				DF6B53DF18D81F76009EA59E /* GSAppDelegate.h */,
 				DF6B53E018D81F76009EA59E /* GSAppDelegate.m */,
-				DF6B53E218D81F76009EA59E /* MainMenu.xib */,
 				DF6B53E518D81F76009EA59E /* Images.xcassets */,
+				DFBE391318E6DB1500734B84 /* MainMenu.xib */,
 				DF6B53D418D81F76009EA59E /* Supporting Files */,
 			);
 			path = "Torrent Updater";
@@ -127,11 +244,14 @@
 		DF6B53D418D81F76009EA59E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFBE38F818E6D12200734B84 /* Localizable.strings */,
+				DF3AF8EE18E3F60700D018D0 /* dsa_pub.pem */,
+				DF6E236B18DB5505008F7600 /* trackers.plist */,
 				DF6B53D518D81F76009EA59E /* Torrent Updater-Info.plist */,
 				DF6B53D618D81F76009EA59E /* InfoPlist.strings */,
 				DF6B53D918D81F76009EA59E /* main.m */,
 				DF6B53DB18D81F76009EA59E /* Torrent Updater-Prefix.pch */,
-				DF6B53DC18D81F76009EA59E /* Credits.rtf */,
+				DF46AC6E18D8896000DDC32B /* defaultPrefs.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,6 +274,103 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DF6B540718D844AC009EA59E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E236218DB52B6008F7600 /* Torrent */,
+				DF6E235318DB2AA8008F7600 /* Common */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DF6B540D18D84965009EA59E /* External */ = {
+			isa = PBXGroup;
+			children = (
+				DF46AC7018D891D200DDC32B /* LaunchAtLogin */,
+				DF6B541C18D84DCD009EA59E /* MASPreferences */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		DF6B541C18D84DCD009EA59E /* MASPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				DF6B542018D84DCD009EA59E /* MASPreferencesViewController.h */,
+				DF6B542118D84DCD009EA59E /* MASPreferencesWindow.xib */,
+				DF6B542218D84DCD009EA59E /* MASPreferencesWindowController.h */,
+				DF6B542318D84DCD009EA59E /* MASPreferencesWindowController.m */,
+			);
+			path = MASPreferences;
+			sourceTree = "<group>";
+		};
+		DF6B542B18D84E04009EA59E /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				DFA10AE018E6AE8500CB5275 /* Controllers */,
+				DF46AC6918D85D0500DDC32B /* GSGeneralSettings.h */,
+				DF46AC6A18D85D0500DDC32B /* GSGeneralSettings.m */,
+				DFBE38FF18E6D76C00734B84 /* GSGeneralSettings.xib */,
+				DF35600218E4252400216015 /* GSUpdateSettings.h */,
+				DF35600318E4252400216015 /* GSUpdateSettings.m */,
+				DFBE390818E6D91600734B84 /* GSUpdateSettings.xib */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		DF6E235318DB2AA8008F7600 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E237318DC46F8008F7600 /* GSNumberTextFormatter.h */,
+				DF6E237418DC46F8008F7600 /* GSNumberTextFormatter.m */,
+				DF6E236818DB53D4008F7600 /* GSSettings.h */,
+				DF6E236918DB53D4008F7600 /* GSSettings.m */,
+				DF6E235F18DB486F008F7600 /* GSTimerController.h */,
+				DF6E236018DB486F008F7600 /* GSTimerController.m */,
+				DF6E237018DC0E6D008F7600 /* GSExtra.h */,
+				DF6E237118DC0E6D008F7600 /* GSExtra.m */,
+				DFA0D49D18DEC44500CAE963 /* GSAdditions.h */,
+				DFA0D49E18DEC44500CAE963 /* GSAdditions.m */,
+				DFAF817418E4474E009866BA /* GSAnalytics.h */,
+				DFAF817518E4474E009866BA /* GSAnalytics.m */,
+				DFA10AEA18E6B1EA00CB5275 /* GSHyperlinkTextField.h */,
+				DFA10AEB18E6B1EA00CB5275 /* GSHyperlinkTextField.m */,
+			);
+			name = Common;
+			path = Models/Common;
+			sourceTree = "<group>";
+		};
+		DF6E236218DB52B6008F7600 /* Torrent */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E236318DB52D4008F7600 /* GSTorrCheck.h */,
+				DF6E236418DB52D4008F7600 /* GSTorrCheck.m */,
+				DF6E236D18DC0AB1008F7600 /* GSTorrAdd.h */,
+				DF6E236E18DC0AB1008F7600 /* GSTorrAdd.m */,
+				DF6E237918DC4EA1008F7600 /* GSTorrentsGetter.h */,
+				DF6E237A18DC4EA1008F7600 /* GSTorrentsGetter.m */,
+				DF6E237C18DC4F80008F7600 /* GSTorrentsSetter.h */,
+				DF6E237D18DC4F80008F7600 /* GSTorrentsSetter.m */,
+				DF1FC15F18DD7404006BC200 /* GSTorrUpdate.h */,
+				DF1FC16018DD7404006BC200 /* GSTorrUpdate.m */,
+				DF1FC16218DD9CC8006BC200 /* GSTorrDownload.h */,
+				DF1FC16318DD9CC8006BC200 /* GSTorrDownload.m */,
+			);
+			name = Torrent;
+			sourceTree = "<group>";
+		};
+		DFA10AE018E6AE8500CB5275 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFA10AE418E6AF0600CB5275 /* GSDownloadLocationEnabledController.h */,
+				DFA10AE518E6AF0600CB5275 /* GSDownloadLocationEnabledController.m */,
+				DFA10AE618E6AF0600CB5275 /* GSStatusItemController.h */,
+				DFA10AE718E6AF0600CB5275 /* GSStatusItemController.m */,
+				DFA10AE118E6AED700CB5275 /* GSShowDockController.h */,
+				DFA10AE218E6AED700CB5275 /* GSShowDockController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +381,7 @@
 				DF6B53C618D81F76009EA59E /* Sources */,
 				DF6B53C718D81F76009EA59E /* Frameworks */,
 				DF6B53C818D81F76009EA59E /* Resources */,
+				DF355FFE18E3F98E00216015 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -214,6 +432,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = DF6B53C118D81F76009EA59E;
 			productRefGroup = DF6B53CB18D81F76009EA59E /* Products */;
@@ -232,9 +451,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF6B53D818D81F76009EA59E /* InfoPlist.strings in Resources */,
+				DF46AC6F18D8896000DDC32B /* defaultPrefs.plist in Resources */,
+				DFBE38F618E6D12200734B84 /* Localizable.strings in Resources */,
+				DFBE391118E6DB1500734B84 /* MainMenu.xib in Resources */,
+				DFBE38FD18E6D76C00734B84 /* GSGeneralSettings.xib in Resources */,
+				DFBE390618E6D91600734B84 /* GSUpdateSettings.xib in Resources */,
 				DF6B53E618D81F76009EA59E /* Images.xcassets in Resources */,
-				DF6B53DE18D81F76009EA59E /* Credits.rtf in Resources */,
-				DF6B53E418D81F76009EA59E /* MainMenu.xib in Resources */,
+				DF6B542818D84DCD009EA59E /* MASPreferencesWindow.xib in Resources */,
+				DF3AF8EF18E3F60700D018D0 /* dsa_pub.pem in Resources */,
+				DF6E236C18DB5505008F7600 /* trackers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +478,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6E237518DC46F8008F7600 /* GSNumberTextFormatter.m in Sources */,
+				DF6E236F18DC0AB1008F7600 /* GSTorrAdd.m in Sources */,
+				DF6B542918D84DCD009EA59E /* MASPreferencesWindowController.m in Sources */,
 				DF6B53E118D81F76009EA59E /* GSAppDelegate.m in Sources */,
 				DF6B53DA18D81F76009EA59E /* main.m in Sources */,
+				DF6E237B18DC4EA1008F7600 /* GSTorrentsGetter.m in Sources */,
+				DF46AC6C18D85D0500DDC32B /* GSGeneralSettings.m in Sources */,
+				DFA10AE318E6AED700CB5275 /* GSShowDockController.m in Sources */,
+				DF1FC16118DD7404006BC200 /* GSTorrUpdate.m in Sources */,
+				DF46AC7318D891D200DDC32B /* LaunchAtLoginController.m in Sources */,
+				DF6E236518DB52D4008F7600 /* GSTorrCheck.m in Sources */,
+				DF35600518E4252400216015 /* GSUpdateSettings.m in Sources */,
+				DFA10AEC18E6B1EA00CB5275 /* GSHyperlinkTextField.m in Sources */,
+				DF6E236118DB486F008F7600 /* GSTimerController.m in Sources */,
+				DF6E236A18DB53D4008F7600 /* GSSettings.m in Sources */,
+				DFA10AE918E6AF0600CB5275 /* GSStatusItemController.m in Sources */,
+				DF6E237218DC0E6D008F7600 /* GSExtra.m in Sources */,
+				DFAF817618E4474E009866BA /* GSAnalytics.m in Sources */,
+				DFA0D49F18DEC44500CAE963 /* GSAdditions.m in Sources */,
+				DF1FC16418DD9CC8006BC200 /* GSTorrDownload.m in Sources */,
+				DFA10AE818E6AF0600CB5275 /* GSDownloadLocationEnabledController.m in Sources */,
+				DF6E237E18DC4F80008F7600 /* GSTorrentsSetter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,32 +526,56 @@
 			isa = PBXVariantGroup;
 			children = (
 				DF6B53D718D81F76009EA59E /* en */,
+				DF6B540218D823FA009EA59E /* ru */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DF6B53DC18D81F76009EA59E /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF6B53DD18D81F76009EA59E /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		DF6B53E218D81F76009EA59E /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF6B53E318D81F76009EA59E /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		DF6B53F418D81F76009EA59E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DF6B53F518D81F76009EA59E /* en */,
+				DF6B540418D823FA009EA59E /* ru */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DFBE38F818E6D12200734B84 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBE38F918E6D12700734B84 /* ru */,
+				DFBE38FA18E6D12800734B84 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DFBE38FF18E6D76C00734B84 /* GSGeneralSettings.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBE390418E6D78400734B84 /* ru */,
+				DFBE390518E6D78A00734B84 /* en */,
+			);
+			name = GSGeneralSettings.xib;
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		DFBE390818E6D91600734B84 /* GSUpdateSettings.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBE390B18E6D92100734B84 /* ru */,
+				DFBE390E18E6D92500734B84 /* en */,
+			);
+			name = GSUpdateSettings.xib;
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		DFBE391318E6DB1500734B84 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBE391618E6DB2500734B84 /* en */,
+				DFE5163E18E6E3FA005DCDC1 /* ru */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -375,7 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -385,10 +654,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater",
+					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater/Torrent\\ Updater/External",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Torrent Updater/Torrent Updater-Prefix.pch";
 				INFOPLIST_FILE = "Torrent Updater/Torrent Updater-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater/Torrent\\ Updater/External",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,10 +677,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater",
+					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater/Torrent\\ Updater/External",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Torrent Updater/Torrent Updater-Prefix.pch";
 				INFOPLIST_FILE = "Torrent Updater/Torrent Updater-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater/Torrent\\ Updater/External",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -465,6 +754,7 @@
 				DF6B53FD18D81F76009EA59E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF6B53FE18D81F76009EA59E /* Build configuration list for PBXNativeTarget "Torrent UpdaterTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +763,7 @@
 				DF6B540018D81F76009EA59E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

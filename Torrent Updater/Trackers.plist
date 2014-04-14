@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>New-RuTor.org</key>
+	<dict>
+		<key>needLogin</key>
+		<false/>
+		<key>encoding</key>
+		<string>UTF8</string>
+		<key>downloadURL</key>
+		<string>http://d.new-rutor.org/download/%@</string>
+		<key>name</key>
+		<string>New-RuTor.org</string>
+		<key>order</key>
+		<integer>3</integer>
+		<key>checkTorrent</key>
+		<string>&lt;img src=&quot;http://new-rutor.org/parse/s.rutor.org/t/down.png&quot;&gt; Скачать </string>
+		<key>dateFormat</key>
+		<string>dd-MM-yyyy HH:mm:ss</string>
+		<key>monthsNames</key>
+		<array/>
+		<key>modifiedParseStart</key>
+		<string>Добавлен&lt;/td&gt;&lt;td&gt;</string>
+		<key>modifiedParseEnd</key>
+		<string>  (</string>
+		<key>removeInTitle</key>
+		<string>new-rutor.org :: </string>
+		<key>titleSeparator</key>
+		<string>/</string>
+		<key>titleParseStart</key>
+		<string>&lt;title&gt;</string>
+		<key>titleParseEnd</key>
+		<string>&lt;/title&gt;</string>
+		<key>torrentUrl</key>
+		<string>http://new-rutor.org/torrent/</string>
+		<key>loginCheckURL</key>
+		<string>http://new-rutor.org</string>
+		<key>loginCheckString</key>
+		<string>&lt;html&gt;</string>
+	</dict>
+	<key>RuTracker.org</key>
+	<dict>
+		<key>needLogin</key>
+		<true/>
+		<key>downloadURL</key>
+		<string>http://dl.rutracker.org/forum/dl.php?t=%@</string>
+		<key>name</key>
+		<string>RuTracker.org</string>
+		<key>order</key>
+		<integer>1</integer>
+		<key>checkTorrent</key>
+		<string>Скачать .torrent</string>
+		<key>dateFormat</key>
+		<string>dd-MMM-yy HH:mm</string>
+		<key>monthsNames</key>
+		<array>
+			<string>янв</string>
+			<string>фев</string>
+			<string>мар</string>
+			<string>апр</string>
+			<string>май</string>
+			<string>июн</string>
+			<string>июл</string>
+			<string>авг</string>
+			<string>сен</string>
+			<string>окт</string>
+			<string>ноя</string>
+			<string>дек</string>
+		</array>
+		<key>modifiedParseStart</key>
+		<string>&lt;span title=&quot;Когда зарегистрирован&quot;&gt;[ </string>
+		<key>modifiedParseEnd</key>
+		<string> ]&lt;/span&gt;</string>
+		<key>removeInTitle</key>
+		<string> :: RuTracker.org (ex torrents.ru)</string>
+		<key>titleSeparator</key>
+		<string> /</string>
+		<key>titleParseStart</key>
+		<string>&lt;title&gt;</string>
+		<key>titleParseEnd</key>
+		<string>&lt;/title&gt;</string>
+		<key>torrentUrl</key>
+		<string>http://rutracker.org/forum/viewtopic.php?t=</string>
+		<key>loginCheckURL</key>
+		<string>http://rutracker.org/forum/index.php</string>
+		<key>loginCheckString</key>
+		<string>Профиль&lt;/a&gt;</string>
+	</dict>
+	<key>Kinozal.tv</key>
+	<dict>
+		<key>needLogin</key>
+		<true/>
+		<key>downloadURL</key>
+		<string>http://kinozal.tv/download.php/%1$@/[kinozal.tv]%1$@.torrent</string>
+		<key>name</key>
+		<string>Kinozal.tv</string>
+		<key>order</key>
+		<integer>2</integer>
+		<key>loginCheckString</key>
+		<string>Ваш профиль&lt;/a&gt;</string>
+		<key>loginCheckURL</key>
+		<string>http://kinozal.tv/</string>
+		<key>torrentUrl</key>
+		<string>http://kinozal.tv/details.php?id=</string>
+		<key>titleParseStart</key>
+		<string>&lt;title&gt;</string>
+		<key>titleParseEnd</key>
+		<string>&lt;/title&gt;</string>
+		<key>titleSeparator</key>
+		<string> /</string>
+		<key>removeInTitle</key>
+		<string> :: Кинозал.ТВ</string>
+		<key>modifiedParseStart</key>
+		<string>&lt;b&gt;Торрент-файл обновлен </string>
+		<key>modifiedParseEnd</key>
+		<string>&lt;/b&gt; Чтобы переподключиться к раздаче, скачайте заново</string>
+		<key>monthsNames</key>
+		<array>
+			<string>января</string>
+			<string>февраля</string>
+			<string>марта</string>
+			<string>апреля</string>
+			<string>мая</string>
+			<string>июня</string>
+			<string>июля</string>
+			<string>августа</string>
+			<string>сентября</string>
+			<string>октября</string>
+			<string>ноября</string>
+			<string>декабря</string>
+		</array>
+		<key>dateFormat</key>
+		<string>dd MMM yyyy &apos;в&apos; HH:mm</string>
+		<key>checkTorrent</key>
+		<string>src=&quot;/pic/dwn_torrent.gif&quot;</string>
+	</dict>
+</dict>
+</plist>

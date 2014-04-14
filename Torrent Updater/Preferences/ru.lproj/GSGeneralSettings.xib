@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1070" defaultVersion="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GSGeneralSettings">
+            <connections>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customView id="1">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="422"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="yeF-Bw-9FP">
+                    <rect key="frame" x="28" y="49" width="122" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Папка назначения" id="C43-Hb-TeI">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="Rny-wV-M0X" name="enabled" keyPath="values.autoDownloadWhenUpdated" id="qcd-IZ-cQ7"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="XSQ-5v-aPx">
+                    <rect key="frame" x="28" y="143" width="186" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Запускать при загрузке OSX" id="8bs-Ed-rI9">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="PQH-Ic-S9h">
+                    <rect key="frame" x="28" y="190" width="175" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Показывать иконку в доке" id="6Gg-uS-dKP">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="yZL-uo-jqT">
+                    <rect key="frame" x="28" y="237" width="219" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Показывать иконку в статус баре" id="YFV-Pa-8Qu">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Yqr-hG-3N9">
+                    <rect key="frame" x="28" y="331" width="237" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Скачивать торрент при обновлении" placeholderString="Auto download torrent when new version has apeeared" id="I3m-Pb-lus">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="idy-UF-hrq">
+                    <rect key="frame" x="28" y="378" width="164" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Период автообновления" id="nJh-De-hi4">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="Q9K-Pw-Qy3">
+                    <rect key="frame" x="270" y="373" width="203" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="3 часа" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="180" imageScaling="proportionallyDown" inset="2" selectedItem="4tS-BY-AqC" id="AIn-Cu-3Rv">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="WI5-So-y0J">
+                            <items>
+                                <menuItem title="Выкл." id="5xJ-2x-XcW">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="5 минут" tag="5" id="y64-QR-IuY">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="10 минут" tag="10" id="WqC-2S-eWa"/>
+                                <menuItem title="15 минут" tag="15" id="Nr5-1a-lw7"/>
+                                <menuItem title="30 минут" tag="30" id="caU-GI-hDc"/>
+                                <menuItem title="1 час" tag="60" id="s6r-9V-miC"/>
+                                <menuItem title="3 часа" state="on" tag="180" id="4tS-BY-AqC"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="autoRefreshSel:" target="-2" id="ecl-IM-3uu"/>
+                        <binding destination="Rny-wV-M0X" name="selectedTag" keyPath="values.autoRefresh" id="Thh-1O-Mr1"/>
+                    </connections>
+                </popUpButton>
+                <button id="7Wm-YR-MOX">
+                    <rect key="frame" x="270" y="331" width="22" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Rqg-4G-mqS">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="update:" target="Puj-Kx-zee" id="wfY-Wv-EiK"/>
+                        <binding destination="Rny-wV-M0X" name="value" keyPath="values.autoDownloadWhenUpdated" id="90c-6L-N1f"/>
+                    </connections>
+                </button>
+                <button id="S6E-Al-Mku">
+                    <rect key="frame" x="270" y="235" width="22" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="5rr-FQ-LYn">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <action selector="menuBarItemSel:" target="-2" id="xRu-EW-t6v"/>
+                        </connections>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="Rny-wV-M0X" name="value" keyPath="values.menuItem" id="EQG-vu-Taq"/>
+                        <binding destination="Rny-wV-M0X" name="enabled" keyPath="values.showDock" id="ikA-GZ-xkq"/>
+                    </connections>
+                </button>
+                <button id="hvw-Ck-bfV">
+                    <rect key="frame" x="270" y="188" width="22" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" inset="2" id="rcT-1V-1tY">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="l3r-NZ-LIA" name="value" keyPath="showDock" id="rdz-Jk-kcu"/>
+                        <binding destination="Rny-wV-M0X" name="enabled" keyPath="values.menuItem" id="N1q-WP-aaW"/>
+                    </connections>
+                </button>
+                <button id="eN7-FY-xR7">
+                    <rect key="frame" x="270" y="141" width="22" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="sbw-eD-3tY">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="4en-WE-jmb" name="value" keyPath="launchAtLogin" id="OFV-So-USQ"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="fZe-MN-tCq">
+                    <rect key="frame" x="270" y="49" width="203" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="~/" usesSingleLineMode="YES" id="rhi-hM-GCO">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="Rny-wV-M0X" name="enabled" keyPath="values.autoDownloadWhenUpdated" id="DV5-2t-w2R"/>
+                        <binding destination="Rny-wV-M0X" name="value" keyPath="values.fileLocation" id="4Rc-yZ-OkB"/>
+                    </connections>
+                </textField>
+                <button verticalHuggingPriority="750" id="Bxd-MH-GHz">
+                    <rect key="frame" x="312" y="13" width="118" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Изменить" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DCt-rs-Glt">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectFolderSel:" target="-2" id="Ip7-h6-9rN"/>
+                        <binding destination="Puj-Kx-zee" name="enabled" keyPath="downloadLocationEnabled" id="Kxu-BP-MYz"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="R2M-wI-9JU">
+                    <rect key="frame" x="28" y="284" width="237" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Скачивать торрент при добавлении" id="zwd-Wb-ZpJ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button id="PfO-yq-OOZ">
+                    <rect key="frame" x="270" y="283" width="22" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="usN-yZ-y7j">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="update:" target="Puj-Kx-zee" id="8Ng-ob-6hu"/>
+                        <binding destination="Rny-wV-M0X" name="value" keyPath="values.autoDownloadWhenAdded" id="wgI-Pv-DGp"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="fxu-lJ-2rX">
+                    <rect key="frame" x="28" y="96" width="205" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Имя скаченного .torrent файла" id="Hs8-cg-KPM">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="Rny-wV-M0X" name="enabled" keyPath="values.autoDownloadWhenUpdated" id="atT-mP-K1z"/>
+                    </connections>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="Ecj-uI-nQi">
+                    <rect key="frame" x="270" y="89" width="203" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Имя трекера + имя раздачи" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="2" imageScaling="proportionallyDown" inset="2" selectedItem="lhe-0l-VN2" id="tsT-u7-CCZ">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="cIK-Io-S6j">
+                            <items>
+                                <menuItem title="Оставить имя как на трекере" id="7fd-3P-CGT"/>
+                                <menuItem title="Имя трекера + номер раздачи" tag="1" id="33l-0N-07h"/>
+                                <menuItem title="Имя трекера + имя раздачи" state="on" tag="2" id="lhe-0l-VN2"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="Puj-Kx-zee" name="enabled" keyPath="downloadLocationEnabled" id="wIZ-jm-Uff"/>
+                        <binding destination="Rny-wV-M0X" name="selectedTag" keyPath="values.downloadedFilename" id="Am5-eR-OYL"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+        </customView>
+        <customObject id="4en-WE-jmb" customClass="LaunchAtLoginController"/>
+        <customObject id="l3r-NZ-LIA" customClass="GSShowDockController"/>
+        <customObject id="Puj-Kx-zee" customClass="GSDownloadLocationEnabledController">
+            <connections>
+                <outlet property="setDownloadFilename" destination="Ecj-uI-nQi" id="XKf-si-yQS"/>
+                <outlet property="setLocationButton" destination="Bxd-MH-GHz" id="YGe-AP-2ZQ"/>
+            </connections>
+        </customObject>
+        <userDefaultsController representsSharedInstance="YES" id="Rny-wV-M0X"/>
+    </objects>
+</document>

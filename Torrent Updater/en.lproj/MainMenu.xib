@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="Torrent Updater" id="56">
+                    <menu key="submenu" title="Torrent Updater" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About Torrent Updater" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="aboutSel:" target="494" id="Vo0-AR-nPA"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="preferencesSel:" target="494" id="TGL-jU-emf"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Check For Updates" id="ob6-Nr-GWB">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="dQU-gV-tcH" id="5RE-nP-emO"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide Torrent Updater" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit Torrent Updater" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="83">
+                    <menu key="submenu" title="File" id="81">
+                        <items>
+                            <menuItem title="Add Torrent" keyEquivalent="n" id="HIM-yL-Aw0">
+                                <connections>
+                                    <action selector="ATPOpenSel:" target="494" id="IvN-am-4ky"/>
+                                    <binding destination="9fN-EW-dSr" name="enabled" keyPath="values.actionsAreEnabled" id="v1S-US-y71"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Update All" keyEquivalent="u" id="t0p-30-Swg">
+                                <connections>
+                                    <action selector="updateAllSel:" target="494" id="wCs-W4-6OS"/>
+                                    <binding destination="9fN-EW-dSr" name="enabled" keyPath="values.actionsAreEnabled" id="267-tR-pKf"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open destination Folder" id="k5e-1Q-7sY">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openDestFolderSel:" target="494" id="tcS-dU-H8n"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="217">
+                    <menu key="submenu" title="Edit" id="205">
+                        <items>
+                            <menuItem title="Cut" keyEquivalent="x" id="199">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="228"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="197">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="224"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="203">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="226"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" id="202">
+                                <connections>
+                                    <action selector="delete:" target="-1" id="235"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="198">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="232"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="19">
+                    <menu key="submenu" title="Window" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="23">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="37"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="239">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="240"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bring All to Front" id="5">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="490">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="491">
+                        <items>
+                            <menuItem title="Torrent Updater Help" keyEquivalent="?" id="492">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="493"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="Torrent Updater" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="352" y="542" width="550" height="129"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <view key="contentView" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="550" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-xG-Cq8">
+                        <rect key="frame" x="-1" y="30" width="552" height="100"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <clipView key="contentView" id="wsh-ut-VSj">
+                            <rect key="frame" x="1" y="1" width="550" height="98"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" autosaveColumns="NO" typeSelect="NO" rowSizeStyle="automatic" viewBased="YES" id="A3z-UC-xhr">
+                                    <rect key="frame" x="0.0" y="0.0" width="550" height="98"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <tableViewGridLines key="gridStyleMask" horizontal="YES"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn identifier="MainColumn" width="547" minWidth="40" maxWidth="2000" id="YLq-Hb-k2N">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="y0b-4y-myH">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <prototypeCellViews>
+                                                <tableCellView id="d1S-Ff-IdX">
+                                                    <rect key="frame" x="1" y="1" width="547" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="YXm-as-Wjq">
+                                                            <rect key="frame" x="2" y="31" width="547" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" allowsEditingTextAttributes="YES" id="RPS-MZ-JsX">
+                                                                <font key="font" metaFont="systemBold"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                        <textField identifier="trackerLabel" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UXt-vB-RKh">
+                                                            <rect key="frame" x="242" y="3" width="304" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="17" id="70J-R0-iM1"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="VsW-Gp-L1C"/>
+                                                            </constraints>
+                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Label" allowsEditingTextAttributes="YES" id="Vek-j4-VMt">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="d1S-Ff-IdX" id="52e-7d-l1f"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Mg-jt-dzc">
+                                                            <rect key="frame" x="3" y="17" width="306" height="11"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="4pY-b6-NGQ">
+                                                                <font key="font" metaFont="smallSystem"/>
+                                                                <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="d1S-Ff-IdX" id="6C3-Vk-ikq"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GpL-WB-pCY">
+                                                            <rect key="frame" x="3" y="3" width="306" height="12"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Label" usesSingleLineMode="YES" id="ROd-Lq-dfz">
+                                                                <font key="font" metaFont="smallSystem"/>
+                                                                <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="d1S-Ff-IdX" id="e0q-bi-c3i"/>
+                                                            </connections>
+                                                        </textField>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="YXm-as-Wjq" firstAttribute="leading" secondItem="d1S-Ff-IdX" secondAttribute="leading" constant="4" id="4Hu-g6-8s5"/>
+                                                        <constraint firstAttribute="trailing" secondItem="UXt-vB-RKh" secondAttribute="trailing" constant="3" id="PRD-Ku-6ys"/>
+                                                        <constraint firstItem="YXm-as-Wjq" firstAttribute="top" secondItem="d1S-Ff-IdX" secondAttribute="top" id="iSE-rU-abd"/>
+                                                        <constraint firstAttribute="trailing" secondItem="YXm-as-Wjq" secondAttribute="trailing" id="nWF-gZ-F4D"/>
+                                                        <constraint firstAttribute="bottom" secondItem="UXt-vB-RKh" secondAttribute="bottom" constant="3" id="nZv-gy-MXx"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="textField" destination="YXm-as-Wjq" id="GNW-Az-aCV"/>
+                                                    </connections>
+                                                </tableCellView>
+                                            </prototypeCellViews>
+                                        </tableColumn>
+                                    </tableColumns>
+                                    <connections>
+                                        <outlet property="dataSource" destination="494" id="LId-1M-IkO"/>
+                                        <outlet property="delegate" destination="494" id="i7o-F0-XyC"/>
+                                        <outlet property="menu" destination="ISf-hu-Y0e" id="Dd2-gP-UcM"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="WYn-gH-daa">
+                            <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="TcV-yv-BHN">
+                            <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lHR-jg-rgR">
+                        <rect key="frame" x="7" y="3" width="26" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="CBT-7B-lGz"/>
+                            <constraint firstAttribute="height" constant="22" id="iZs-nX-b9s"/>
+                        </constraints>
+                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9cK-uS-wKk">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ATPOpenSel:" target="494" id="gpp-8i-0Wh"/>
+                            <binding destination="9fN-EW-dSr" name="enabled" keyPath="values.actionsAreEnabled" id="KVf-eL-HMg"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-EQ-4px">
+                        <rect key="frame" x="41" y="3" width="26" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="8dr-lc-6tb"/>
+                            <constraint firstAttribute="width" constant="26" id="Tbp-Fx-QTw"/>
+                        </constraints>
+                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSRefreshTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1pW-ic-wCK">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="updateAllSel:" target="494" id="7Ft-CT-p2L"/>
+                            <binding destination="9fN-EW-dSr" name="enabled" keyPath="values.actionsAreEnabled" id="mE3-d3-shV"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GZ9-XI-GVl">
+                        <rect key="frame" x="517" y="3" width="26" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="MB2-Go-jsR"/>
+                            <constraint firstAttribute="width" constant="26" id="lrw-DP-E7a"/>
+                        </constraints>
+                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSActionTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GX9-1L-iap">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="preferencesSel:" target="494" id="pLE-bZ-uIe"/>
+                        </connections>
+                    </button>
+                    <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="wHh-hX-buY">
+                        <rect key="frame" x="137" y="8" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nq6-Li-pD7">
+                        <rect key="frame" x="73" y="8" width="55" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Loading" id="PWm-pa-Puy">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rih-WO-ubY">
+                        <rect key="frame" x="73" y="8" width="439" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="435" id="Laf-nN-kcQ"/>
+                            <constraint firstAttribute="height" constant="17" id="dZ0-Vw-8lA"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Last Updated" id="bQN-mO-P8U">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nJ0-EQ-4px" firstAttribute="leading" secondItem="lHR-jg-rgR" secondAttribute="trailing" constant="8" id="3nV-hy-7Ss"/>
+                    <constraint firstItem="Rih-WO-ubY" firstAttribute="leading" secondItem="nJ0-EQ-4px" secondAttribute="trailing" constant="8" id="4aH-a2-FLp"/>
+                    <constraint firstAttribute="bottom" secondItem="GZ9-XI-GVl" secondAttribute="bottom" constant="5" id="4qX-lr-9Om"/>
+                    <constraint firstItem="N92-xG-Cq8" firstAttribute="top" secondItem="372" secondAttribute="top" constant="-1" id="FH6-nk-YZl"/>
+                    <constraint firstItem="wHh-hX-buY" firstAttribute="leading" secondItem="nq6-Li-pD7" secondAttribute="trailing" constant="11" id="Jh9-qg-GWW"/>
+                    <constraint firstAttribute="trailing" secondItem="GZ9-XI-GVl" secondAttribute="trailing" constant="7" id="Mpm-0S-Sss"/>
+                    <constraint firstItem="GZ9-XI-GVl" firstAttribute="top" secondItem="N92-xG-Cq8" secondAttribute="bottom" constant="3" id="OEt-7A-GTL"/>
+                    <constraint firstAttribute="trailing" secondItem="N92-xG-Cq8" secondAttribute="trailing" constant="-1" id="R8X-Pd-0lY"/>
+                    <constraint firstItem="nq6-Li-pD7" firstAttribute="baseline" secondItem="lHR-jg-rgR" secondAttribute="baseline" id="UbI-IA-OEL"/>
+                    <constraint firstItem="lHR-jg-rgR" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="7" id="Vjd-5x-IlW"/>
+                    <constraint firstItem="wHh-hX-buY" firstAttribute="bottom" secondItem="nq6-Li-pD7" secondAttribute="bottom" id="g3a-dl-N1f"/>
+                    <constraint firstAttribute="bottom" secondItem="Rih-WO-ubY" secondAttribute="bottom" constant="8" id="iPY-Oi-sXi"/>
+                    <constraint firstItem="N92-xG-Cq8" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="-1" id="nCo-xE-xs3"/>
+                    <constraint firstItem="nq6-Li-pD7" firstAttribute="leading" secondItem="nJ0-EQ-4px" secondAttribute="trailing" constant="8" symbolic="YES" id="ooQ-au-YWp"/>
+                    <constraint firstItem="lHR-jg-rgR" firstAttribute="top" secondItem="N92-xG-Cq8" secondAttribute="bottom" constant="3" id="phP-F1-N2H"/>
+                    <constraint firstAttribute="bottom" secondItem="nJ0-EQ-4px" secondAttribute="bottom" constant="5" id="xFZ-mH-4NN"/>
+                </constraints>
+            </view>
+            <contentBorderThickness minY="32"/>
+        </window>
+        <customObject id="494" customClass="GSAppDelegate">
+            <connections>
+                <outlet property="ATPAddButton" destination="aX3-Kj-tjQ" id="6xY-Mp-gfR"/>
+                <outlet property="ATPLinkField" destination="prr-oZ-01X" id="dMM-uF-NPA"/>
+                <outlet property="ATPLinkFieldText" destination="drn-l5-AOA" id="e7a-gC-QPj"/>
+                <outlet property="ATPLoadingIndicator" destination="Gx9-ca-igi" id="0Bi-aW-nNw"/>
+                <outlet property="ATPLoginRequired" destination="ePz-2T-tNV" id="sAl-ID-vin"/>
+                <outlet property="ATPNoInternetConnection" destination="AEk-sE-Nn1" id="idO-3n-TPd"/>
+                <outlet property="ATPNoInternetConnectionCheckOneMoreTime" destination="EOE-uE-ENv" id="hmC-Gr-X6Q"/>
+                <outlet property="ATPOpenInSafari" destination="636-EF-wI3" id="rW6-RO-LET"/>
+                <outlet property="ATPSelectTracker" destination="URt-e0-nzB" id="ces-bI-PkP"/>
+                <outlet property="ATPTryOneMoreTime" destination="to7-1x-ezT" id="O2Z-p3-X7a"/>
+                <outlet property="aboutWindow" destination="xrl-BZ-nRb" id="7KK-vN-6U5"/>
+                <outlet property="addTorrentPanel" destination="NfE-ww-Dc1" id="BCj-qF-tQF"/>
+                <outlet property="appLink" destination="t21-bw-y7U" id="V0z-hU-Xg2"/>
+                <outlet property="contactAuthor" destination="fhr-rv-i5O" id="Ifn-4e-QFG"/>
+                <outlet property="lastUpdatedLabel" destination="Rih-WO-ubY" id="D1X-ax-kIq"/>
+                <outlet property="loadingLabel" destination="nq6-Li-pD7" id="vwp-ID-Leh"/>
+                <outlet property="mainWindowLoadingIndicator" destination="wHh-hX-buY" id="hBe-xG-jBT"/>
+                <outlet property="olenyev" destination="EAq-eQ-frW" id="ftN-zf-S3f"/>
+                <outlet property="statusMenu" destination="1ru-3Z-vhz" id="D3l-wJ-WO5"/>
+                <outlet property="torrentsTableView" destination="A3z-UC-xhr" id="6rx-fU-Dqu"/>
+                <outlet property="window" destination="371" id="Whx-pY-h6g"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="NfE-ww-Dc1" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="120" y="65" width="485" height="163"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <view key="contentView" id="wYV-0w-Ihb">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="URt-e0-nzB">
+                        <rect key="frame" x="163" y="100" width="159" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="u4D-gp-1kb">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="PlK-yC-wan"/>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="ATPTrackerChooseSel:" target="494" id="SQg-se-InB"/>
+                        </connections>
+                    </popUpButton>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zY0-0K-JAy">
+                        <rect key="frame" x="-2" y="132" width="489" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Choose torrent tracker" id="2Ca-Z1-v5i">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drn-l5-AOA">
+                        <rect key="frame" x="-14" y="72" width="489" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Enter torrent ID" id="I4G-PZ-VjM">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="prr-oZ-01X">
+                        <rect key="frame" x="20" y="42" width="445" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="JFL-Xt-Hmb">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="ATPAddSel:" target="494" id="kZu-kh-u6M"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8V9-3s-X5g">
+                        <rect key="frame" x="103" y="3" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="COa-BY-9v9">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ATPCloseSel:" target="494" id="Rz6-kG-cHJ"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aX3-Kj-tjQ">
+                        <rect key="frame" x="298" y="3" width="66" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HvX-15-RJc">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ATPAddSel:" target="494" id="4pF-na-1Vy"/>
+                        </connections>
+                    </button>
+                    <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Gx9-ca-igi">
+                        <rect key="frame" x="342" y="105" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
+                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePz-2T-tNV">
+                        <rect key="frame" x="18" y="72" width="449" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Login failed, you have to log in Safari" id="rfU-y8-7vJ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="636-EF-wI3">
+                        <rect key="frame" x="80" y="36" width="129" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Open in Safari" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="e9C-x2-0q8">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ATPOpenInSafariSel:" target="494" id="EAX-Xa-qTl"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="to7-1x-ezT">
+                        <rect key="frame" x="272" y="36" width="156" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Try one more time" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="x3w-rM-m2D">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ATPTrackerChooseSel:" target="494" id="HpY-2l-PeC"/>
+                        </connections>
+                    </button>
+                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AEk-sE-Nn1">
+                        <rect key="frame" x="22" y="72" width="445" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="No internet connection" id="Fxb-Jk-kKY">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EOE-uE-ENv">
+                        <rect key="frame" x="155" y="36" width="175" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Check one more time" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1qg-zU-IFC">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ATPTrackerChooseSel:" target="494" id="7bN-Aq-QeY"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+        </window>
+        <customObject id="W96-tS-tq0" customClass="GSShowDockController"/>
+        <customObject id="rjI-iD-3zX" customClass="GSTorrUpdate">
+            <connections>
+                <outlet property="lastUpdatedLabel" destination="Rih-WO-ubY" id="Ylf-GP-NX9"/>
+            </connections>
+        </customObject>
+        <customObject id="dQU-gV-tcH" customClass="SUUpdater"/>
+        <menu autoenablesItems="NO" id="1ru-3Z-vhz">
+            <items>
+                <menuItem title="Show Application" id="VJu-SA-fDr">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showAppSel:" target="494" id="Hhx-rL-9qr"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Update" id="0Yx-vv-SOW">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="updateAllSel:" target="494" id="Sip-ZU-qDo"/>
+                        <binding destination="9fN-EW-dSr" name="enabled" keyPath="values.actionsAreEnabled" id="LFb-7d-abv"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Preferences" id="4ii-hM-obg">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="preferencesSel:" target="494" id="RTc-UG-dLZ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="About" id="Hc2-qX-Qyf">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="aboutSel:" target="494" id="rzj-g7-tsq"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="VcL-hp-RDD">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-3" id="cOj-GH-MDv"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <accessibility description="MenuItem Menu"/>
+        </menu>
+        <userDefaultsController representsSharedInstance="YES" id="9fN-EW-dSr"/>
+        <menu title="torrentMenu" autoenablesItems="NO" id="ISf-hu-Y0e">
+            <items>
+                <menuItem title="Delete" id="EnL-ex-LZB">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="removeTorr:" target="494" id="OnU-by-xKd"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Update" id="vRh-ju-1gt">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="updateSel:" target="494" id="R66-gB-cUi"/>
+                        <binding destination="9fN-EW-dSr" name="enabled" keyPath="values.actionsAreEnabled" id="p2z-mP-e9H"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Download" id="qFr-MZ-gvo">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="downloadSel:" target="494" id="w1K-LP-cCW"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Open in Browser" id="pz3-jH-Ev6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openTorrInBrowser:" target="494" id="icl-1s-pvv"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="494" id="gkz-Ha-tT2"/>
+            </connections>
+        </menu>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="xrl-BZ-nRb">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="510" y="211" width="281" height="315"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <view key="contentView" id="Ezi-vG-JQL">
+                <rect key="frame" x="0.0" y="0.0" width="281" height="315"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hts-hf-9Yi">
+                        <rect key="frame" x="101" y="234" width="78" height="78"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="5m0-oa-DNF"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d0j-HX-LeN">
+                        <rect key="frame" x="17" y="209" width="246" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Torrent Updater" allowsEditingTextAttributes="YES" id="ff6-Dy-ykh">
+                            <font key="font" metaFont="systemBold"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9PB-gg-LA0">
+                        <rect key="frame" x="17" y="184" width="246" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version 2.0" id="L2e-YM-765">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t21-bw-y7U" customClass="GSHyperlinkTextField">
+                        <rect key="frame" x="17" y="121" width="247" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="http://torrent-updater.goooseman.ru" allowsEditingTextAttributes="YES" id="WWi-0u-SRj">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-yX-bvJ">
+                        <rect key="frame" x="17" y="11" width="246" height="37"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="xG0-3L-OpB">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">Copyright © 2013-2014 goooseman
+All rights reserved.</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhr-rv-i5O" customClass="GSHyperlinkTextField">
+                        <rect key="frame" x="17" y="91" width="246" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Contact author" allowsEditingTextAttributes="YES" id="ma5-4z-CZF">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lua-mI-y6R">
+                        <rect key="frame" x="75" y="61" width="93" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Graphics by" id="Pri-K6-0OJ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAq-eQ-frW" customClass="GSHyperlinkTextField">
+                        <rect key="frame" x="154" y="61" width="60" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="olenyev" allowsEditingTextAttributes="YES" id="Yl2-a9-i76">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lba-g7-b2a">
+                        <rect key="frame" x="63" y="142" width="155" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Check for updates" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wdK-iI-fUT">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="checkForUpdates:" target="dQU-gV-tcH" id="mXz-Fv-EQu"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+    <resources>
+        <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="NSAddTemplate" width="8" height="8"/>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+        <image name="NSRefreshTemplate" width="10" height="12"/>
+    </resources>
+</document>

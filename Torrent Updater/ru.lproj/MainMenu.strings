@@ -1,0 +1,207 @@
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "5"; */
+"5.title" = "Все окна - на передний план";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "19"; */
+"19.title" = "Окно";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "23"; */
+"23.title" = "Убрать в Dock";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "24"; */
+"24.title" = "Окно";
+
+/* Class = "NSMenu"; title = "AMainMenu"; ObjectID = "29"; */
+"29.title" = "AMainMenu";
+
+/* Class = "NSMenuItem"; title = "Torrent Updater"; ObjectID = "56"; */
+"56.title" = "Torrent Updater";
+
+/* Class = "NSMenu"; title = "Torrent Updater"; ObjectID = "57"; */
+"57.title" = "Torrent Updater";
+
+/* Class = "NSMenuItem"; title = "About Torrent Updater"; ObjectID = "58"; */
+"58.title" = "О Torrent Updater";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "81"; */
+"81.title" = "Файл";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "83"; */
+"83.title" = "Файл";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "129"; */
+"129.title" = "Настройки…";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "130"; */
+"130.title" = "Службы";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "131"; */
+"131.title" = "Службы";
+
+/* Class = "NSMenuItem"; title = "Hide Torrent Updater"; ObjectID = "134"; */
+"134.title" = "Скрыть Torrent Updater";
+
+/* Class = "NSMenuItem"; title = "Quit Torrent Updater"; ObjectID = "136"; */
+"136.title" = "Завершить Torrent Updater";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145"; */
+"145.title" = "Скрыть Остальное";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "150"; */
+"150.title" = "Показать Все";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "197"; */
+"197.title" = "Скопировать";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "198"; */
+"198.title" = "Выбрать Все";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "199"; */
+"199.title" = "Вырезать";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "202"; */
+"202.title" = "Удалить";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "203"; */
+"203.title" = "Вставить";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "205"; */
+"205.title" = "Правка";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "217"; */
+"217.title" = "Правка";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "239"; */
+"239.title" = "Изменить Масштаб";
+
+/* Class = "NSWindow"; title = "Torrent Updater"; ObjectID = "371"; */
+"371.title" = "Torrent Updater";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "490"; */
+"490.title" = "Справка";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "491"; */
+"491.title" = "Справка";
+
+/* Class = "NSMenuItem"; title = "Torrent Updater Help"; ObjectID = "492"; */
+"492.title" = "Справочный Центр";
+
+/* Class = "NSMenuItem"; title = "Update"; ObjectID = "0Yx-vv-SOW"; */
+"0Yx-vv-SOW.title" = "Обновить";
+
+/* Class = "NSButtonCell"; title = "Check one more time"; ObjectID = "1qg-zU-IFC"; */
+"1qg-zU-IFC.title" = "Проверить ещё раз";
+
+/* Class = "NSMenu"; ibExternalAccessibilityDescription = "MenuItem Menu"; ObjectID = "1ru-3Z-vhz"; */
+"1ru-3Z-vhz.ibExternalAccessibilityDescription" = "MenuItem Menu";
+
+/* Class = "NSTextFieldCell"; title = "Choose torrent tracker"; ObjectID = "2Ca-Z1-v5i"; */
+"2Ca-Z1-v5i.title" = "Выберите трекер";
+
+/* Class = "NSMenuItem"; title = "Preferences"; ObjectID = "4ii-hM-obg"; */
+"4ii-hM-obg.title" = "Настройки";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "4pY-b6-NGQ"; */
+"4pY-b6-NGQ.title" = "Label";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "COa-BY-9v9"; */
+"COa-BY-9v9.title" = "Отменить";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "EnL-ex-LZB"; */
+"EnL-ex-LZB.title" = "Удалить";
+
+/* Class = "NSTextFieldCell"; title = "No internet connection"; ObjectID = "Fxb-Jk-kKY"; */
+"Fxb-Jk-kKY.title" = "Отсутсвует интернет подключение";
+
+/* Class = "NSMenuItem"; title = "Add Torrent"; ObjectID = "HIM-yL-Aw0"; */
+"HIM-yL-Aw0.title" = "Добавить Торрент";
+
+/* Class = "NSMenuItem"; title = "About"; ObjectID = "Hc2-qX-Qyf"; */
+"Hc2-qX-Qyf.title" = "О программе";
+
+/* Class = "NSButtonCell"; title = "Add"; ObjectID = "HvX-15-RJc"; */
+"HvX-15-RJc.title" = "Добавить";
+
+/* Class = "NSTextFieldCell"; title = "Enter torrent link"; ObjectID = "I4G-PZ-VjM"; */
+"I4G-PZ-VjM.title" = "Введите номер торрента";
+
+/* Class = "NSMenu"; title = "torrentMenu"; ObjectID = "ISf-hu-Y0e"; */
+"ISf-hu-Y0e.title" = "torrentMenu";
+
+/* Class = "NSTextFieldCell"; title = "Version 2.0"; ObjectID = "L2e-YM-765"; */
+"L2e-YM-765.title" = "Версия 2.0";
+
+/* Class = "NSPanel"; title = "Window"; ObjectID = "NfE-ww-Dc1"; */
+"NfE-ww-Dc1.title" = "Окно";
+
+/* Class = "NSTextFieldCell"; title = "Loading"; ObjectID = "PWm-pa-Puy"; */
+"PWm-pa-Puy.title" = "Загрузка";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "PlK-yC-wan"; */
+"PlK-yC-wan.title" = "OtherViews";
+
+/* Class = "NSTextFieldCell"; title = "Icon author -"; ObjectID = "Pri-K6-0OJ"; */
+"Pri-K6-0OJ.title" = "Автор иконки -";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "ROd-Lq-dfz"; */
+"ROd-Lq-dfz.title" = "Label";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "RPS-MZ-JsX"; */
+"RPS-MZ-JsX.title" = "Table View Cell";
+
+/* Class = "NSMenuItem"; title = "Show Application"; ObjectID = "VJu-SA-fDr"; */
+"VJu-SA-fDr.title" = "Показать окно";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "VcL-hp-RDD"; */
+"VcL-hp-RDD.title" = "Завершить";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "Vek-j4-VMt"; */
+"Vek-j4-VMt.title" = "Label";
+
+/* Class = "NSTextFieldCell"; title = "http://torrent-updater.goooseman.ru"; ObjectID = "WWi-0u-SRj"; */
+"WWi-0u-SRj.title" = "http://torrent-updater.goooseman.ru";
+
+/* Class = "NSTextFieldCell"; title = "olenyev"; ObjectID = "Yl2-a9-i76"; */
+"Yl2-a9-i76.title" = "olenyev";
+
+/* Class = "NSTextFieldCell"; title = "Last Updated"; ObjectID = "bQN-mO-P8U"; */
+"bQN-mO-P8U.title" = "Last Updated";
+
+/* Class = "NSButtonCell"; title = "Open in Safari"; ObjectID = "e9C-x2-0q8"; */
+"e9C-x2-0q8.title" = "Открыть в Safari";
+
+/* Class = "NSTextFieldCell"; title = "Torrent Updater"; ObjectID = "ff6-Dy-ykh"; */
+"ff6-Dy-ykh.title" = "Torrent Updater";
+
+/* Class = "NSMenuItem"; title = "Open destination Folder"; ObjectID = "k5e-1Q-7sY"; */
+"k5e-1Q-7sY.title" = "Открыть папку назначения";
+
+/* Class = "NSTextFieldCell"; title = "Contact author"; ObjectID = "ma5-4z-CZF"; */
+"ma5-4z-CZF.title" = "Написать автору";
+
+/* Class = "NSMenuItem"; title = "Check For Updates"; ObjectID = "ob6-Nr-GWB"; */
+"ob6-Nr-GWB.title" = "Проверить обновления";
+
+/* Class = "NSMenuItem"; title = "Open in Browser"; ObjectID = "pz3-jH-Ev6"; */
+"pz3-jH-Ev6.title" = "Открыть в браузере";
+
+/* Class = "NSTextFieldCell"; title = "Login failed you have to log in Safari"; ObjectID = "rfU-y8-7vJ"; */
+"rfU-y8-7vJ.title" = "Login failed you have to log in Safari";
+
+/* Class = "NSMenuItem"; title = "Update All"; ObjectID = "t0p-30-Swg"; */
+"t0p-30-Swg.title" = "Обновить Всё";
+
+/* Class = "NSMenuItem"; title = "Update"; ObjectID = "vRh-ju-1gt"; */
+"vRh-ju-1gt.title" = "Обновить";
+
+/* Class = "NSButtonCell"; title = "Check for updates"; ObjectID = "wdK-iI-fUT"; */
+"wdK-iI-fUT.title" = "Проверить обновления";
+
+/* Class = "NSButtonCell"; title = "Try one more time"; ObjectID = "x3w-rM-m2D"; */
+"x3w-rM-m2D.title" = "Попробовать еще раз";
+
+/* Class = "NSTextFieldCell"; title = "Copyright © 2013-2014 goooseman\nAll rights reserved."; ObjectID = "xG0-3L-OpB"; */
+"xG0-3L-OpB.title" = "Copyright © 2013-2014 goooseman\nAll rights reserved.";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "y0b-4y-myH"; */
+"y0b-4y-myH.title" = "Text Cell";
