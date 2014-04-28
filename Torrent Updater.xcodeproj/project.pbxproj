@@ -48,6 +48,8 @@
 		DFBE390618E6D91600734B84 /* GSUpdateSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE390818E6D91600734B84 /* GSUpdateSettings.xib */; };
 		DFBE391118E6DB1500734B84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE391318E6DB1500734B84 /* MainMenu.xib */; };
 		DFBE391918E6DF6C00734B84 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DFBE38FB18E6D1CE00734B84 /* Sparkle.framework */; };
+		DFF15A56190E682100639251 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DFF15A54190E682100639251 /* LICENSE */; };
+		DFF15A57190E682100639251 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFF15A55190E682100639251 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +151,8 @@
 		DFBE390E18E6D92500734B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GSUpdateSettings.xib; sourceTree = "<group>"; };
 		DFBE391618E6DB2500734B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DFE5163E18E6E3FA005DCDC1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DFF15A54190E682100639251 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DFF15A55190E682100639251 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,8 @@
 				DF6B53F118D81F76009EA59E /* Torrent UpdaterTests */,
 				DF6B53CC18D81F76009EA59E /* Frameworks */,
 				DF6B53CB18D81F76009EA59E /* Products */,
+				DFF15A54190E682100639251 /* LICENSE */,
+				DFF15A55190E682100639251 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -455,6 +461,8 @@
 				DFBE38F618E6D12200734B84 /* Localizable.strings in Resources */,
 				DFBE391118E6DB1500734B84 /* MainMenu.xib in Resources */,
 				DFBE38FD18E6D76C00734B84 /* GSGeneralSettings.xib in Resources */,
+				DFF15A56190E682100639251 /* LICENSE in Resources */,
+				DFF15A57190E682100639251 /* README.md in Resources */,
 				DFBE390618E6D91600734B84 /* GSUpdateSettings.xib in Resources */,
 				DF6B53E618D81F76009EA59E /* Images.xcassets in Resources */,
 				DF6B542818D84DCD009EA59E /* MASPreferencesWindow.xib in Resources */,
