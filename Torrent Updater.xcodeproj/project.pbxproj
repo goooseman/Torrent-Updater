@@ -664,15 +664,15 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater",
-					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater/Torrent\\ Updater/External",
+					"${SRCROOT}/Torrent\\ Updater",
+					"${SRCROOT}/Torrent\\ Updater/External",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Torrent Updater/Torrent Updater-Prefix.pch";
 				INFOPLIST_FILE = "Torrent Updater/Torrent Updater-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater/Torrent\\ Updater/External",
+					"${SRCROOT}/Torrent\\ Updater/External",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -687,15 +687,15 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater",
-					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater/Torrent\\ Updater/External",
+					"${SRCROOT}/Torrent\\ Updater",
+					"${SRCROOT}/Torrent\\ Updater/External",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Torrent Updater/Torrent Updater-Prefix.pch";
 				INFOPLIST_FILE = "Torrent Updater/Torrent Updater-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/goooseman/XCode/Torr\\ Updater/Torrent\\ Updater/Torrent\\ Updater/External",
+					"${SRCROOT}/Torrent\\ Updater/External",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
