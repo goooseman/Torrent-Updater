@@ -29,14 +29,17 @@
 
 @interface GSAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource, NSTableViewDelegate, NSMenuDelegate> {
     BOOL lastUpdatedIsVisible;
+    NSInteger lastChangeCount;
+	NSPasteboard *pasteboard;
+    NSTimer *pasteboardTimer;
 }
 
 #pragma mark windowsProperties
 
 @property (strong) NSWindowController *preferencesWindow;
 @property (assign) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSWindow *aboutWindow;
-@property (weak) IBOutlet NSPanel *addTorrentPanel;
+@property (unsafe_unretained) IBOutlet NSWindow *aboutWindow;
+@property (unsafe_unretained) IBOutlet NSPanel *addTorrentPanel;
 @property (weak) IBOutlet NSMenu *statusMenu;
 
 #pragma mark addTorrentPanelProperties
@@ -59,6 +62,7 @@
 @property (weak) IBOutlet NSProgressIndicator *mainWindowLoadingIndicator;
 @property (weak) IBOutlet NSTextField *loadingLabel;
 @property (weak) IBOutlet NSTextField *lastUpdatedLabel;
+@property (weak) IBOutlet NSButton *updateAllButton;
 
 #pragma mark aboutWindowProperties
 
@@ -80,6 +84,7 @@
 - (IBAction)preferencesSel:(id)sender;
 - (IBAction)updateAllSel:(id)sender;
 - (void)tableClick:(id)object;
+
 
 #pragma mark mainMenuActions
 

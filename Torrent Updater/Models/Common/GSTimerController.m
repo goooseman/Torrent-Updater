@@ -24,10 +24,18 @@ static GSTimerController *_sharedInstance = nil;
     double timeout = [[[GSSettings alloc] init]._autoRefreshTimeout doubleValue];
     if (sharedTimer)
         [sharedTimer invalidate];
-    if (timeout != 0)
-        [[NSProcessInfo processInfo] performActivityWithOptions:NSActivityAutomaticTerminationDisabled reason:@"Prevent App Nap" usingBlock:^{
+    if (timeout != 0) {
+        if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_8) {
+            [[NSProcessInfo processInfo] performActivityWithOptions:NSActivityAutomaticTerminationDisabled reason:@"Prevent App Nap" usingBlock:^{
+                sharedTimer = [NSTimer scheduledTimerWithTimeInterval:timeout * 60 target:self selector:@selector(updateAll) userInfo:nil repeats:YES];
+            }];
+        } else {
             sharedTimer = [NSTimer scheduledTimerWithTimeInterval:timeout * 60 target:self selector:@selector(updateAll) userInfo:nil repeats:YES];
-        }];
+        }
+
+    }
+    
+    
     
 }
 

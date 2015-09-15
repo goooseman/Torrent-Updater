@@ -15,8 +15,12 @@
     [request setHTTPMethod:@"POST"];
     NSString *post = message;
     [request setHTTPBody:[post dataUsingEncoding:NSUTF8StringEncoding]];
-    [NSURLConnection sendAsynchronousRequest:request queue:[[GSExtra sharedInstance] sharedOperationQueue] completionHandler:nil];
     
+    NSBlockOperation* myOp = [NSBlockOperation blockOperationWithBlock:^{
+        [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    }];
+    
+    [[[GSExtra sharedInstance] sharedOperationQueue] addOperation:myOp];
 }
 
 +(void)onStartup {

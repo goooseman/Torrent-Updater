@@ -2,20 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>New-RuTor.org</key>
+	<key>Free-Rutor.org</key>
 	<dict>
 		<key>needLogin</key>
 		<false/>
 		<key>encoding</key>
 		<string>UTF8</string>
 		<key>downloadURL</key>
-		<string>http://d.new-rutor.org/download/%@</string>
+		<string>http://free-rutor.org/download/%@</string>
 		<key>name</key>
-		<string>New-RuTor.org</string>
+		<string>Free-Rutor.org</string>
 		<key>order</key>
 		<integer>3</integer>
 		<key>checkTorrent</key>
-		<string>&lt;img src=&quot;http://new-rutor.org/parse/s.rutor.org/t/down.png&quot;&gt; Скачать </string>
+		<string>t/down.png&quot;&gt; Скачать </string>
 		<key>dateFormat</key>
 		<string>dd-MM-yyyy HH:mm:ss</string>
 		<key>monthsNames</key>
@@ -25,7 +25,7 @@
 		<key>modifiedParseEnd</key>
 		<string>  (</string>
 		<key>removeInTitle</key>
-		<string>new-rutor.org :: </string>
+		<string>зеркало rutor.org :: </string>
 		<key>titleSeparator</key>
 		<string>/</string>
 		<key>titleParseStart</key>
@@ -33,9 +33,9 @@
 		<key>titleParseEnd</key>
 		<string>&lt;/title&gt;</string>
 		<key>torrentUrl</key>
-		<string>http://new-rutor.org/torrent/</string>
+		<string>http://free-rutor.org/torrent/</string>
 		<key>loginCheckURL</key>
-		<string>http://new-rutor.org</string>
+		<string>http://free-rutor.org</string>
 		<key>loginCheckString</key>
 		<string>&lt;html&gt;</string>
 	</dict>
@@ -133,7 +133,7 @@
 		<key>dateFormat</key>
 		<string>dd MMM yyyy &apos;в&apos; HH:mm</string>
 		<key>checkTorrent</key>
-		<string>src=&quot;/pic/dwn_torrent.gif&quot;</string>
+		<string>http://st.kinozal.tv/pic/dwn_torrent.gif</string>
 	</dict>
 </dict>
 </plist>

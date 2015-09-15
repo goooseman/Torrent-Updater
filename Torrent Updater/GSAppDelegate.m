@@ -17,7 +17,7 @@
 -(id)init {
     self = [super init];
     if (self) {
-        
+        pasteboard = [NSPasteboard generalPasteboard];
     }
     return self;
 }
@@ -30,16 +30,18 @@
     [self resizeWindow];
     [_torrentsTableView setTarget:self];
     [_torrentsTableView setAction:@selector(tableClick:)];
+    [_torrentsTableView setDoubleAction:@selector(openTorrInBrowser:)];
     [[GSTimerController sharedInstance] startAutoUpdateTimer];
-    [self updateAllSel:nil];
+    
+    [self performSelector:@selector(updateAllSel:) withObject:nil afterDelay:0];
+    
+    
     [GSAnalytics onStartup];
     
     
     [_appLink setHyperlinkTextFieldWithText:@"http://torrent-updater.goooseman.ru" andLink:@"http://torrent-updater.goooseman.ru"];
     [_contactAuthor setHyperlinkTextFieldWithText:NSLocalizedString(@"Contact Author", nil) andLink:@"mailto:rutrackerupd@goooseman.ru"];
     [_olenyev setHyperlinkTextFieldWithText:@"olenyev" andLink:@"https://twitter.com/olenyevtweet"];
-    if (_aliyaSoap)
-        [_aliyaSoap setHyperlinkTextFieldWithText:@"Онлайн бутик домашнего мыла Aliya" andLink:@"http://aliya-soap.ru"];
     
 }
 
@@ -192,10 +194,25 @@
     [format setMaximumLength:7];
     [[_ATPLinkField cell] setFormatter:format];
     
+    [self updateClipboard];
+    pasteboardTimer = [NSTimer scheduledTimerWithTimeInterval:0.25 target:self selector:@selector(updateClipboard) userInfo:nil repeats:YES];
 }
+
+-(void)updateClipboard {
+	if ([pasteboard changeCount] == lastChangeCount)
+		return;
+	NSString* pasteboardString = [pasteboard stringForType:NSPasteboardTypeString];
+    if (pasteboardString)
+        [_ATPLinkField setStringValue:[[pasteboardString componentsSeparatedByCharactersInSet:
+                                        [[NSCharacterSet decimalDigitCharacterSet] invertedSet]]
+                                       componentsJoinedByString:@""]];
+	lastChangeCount = [pasteboard changeCount];
+}
+
 - (IBAction)ATPCloseSel:(id)sender {
     [_addTorrentPanel orderOut:nil];
     [NSApp endSheet:_addTorrentPanel];
+    [pasteboardTimer invalidate];
 }
 
 #pragma mark -
@@ -255,6 +272,9 @@
     }
     
 }
+
+
+
 
 #pragma mark -
 #pragma mark mainMenuActions
