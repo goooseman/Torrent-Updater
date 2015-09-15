@@ -6,6 +6,17 @@
         <description>Torrent Updater.app update channel</description>
         <language>en</language>
         <item>
+            <title>Version 2.1.2</title>
+            <sparkle:releaseNotesLink xml:lang="en">
+                http://torrent-updater.goooseman.ru/en/release-notes/2-1-2.html
+            </sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ru">
+                http://torrent-updater.goooseman.ru/ru/release-notes/2-1-2.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wed, 15 Sep 2015 20:00:11 +0000</pubDate>
+            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-1-2.zip" sparkle:version="2.1.2" length="2011501" sparkle:dsaSignature="MCwCFAOEhznD/WJZRhjQ8pbyS0za9HbvAhR4c+E4YYsByHIyGw+J4whVhBbYzA" type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.1.1</title>
             <sparkle:releaseNotesLink xml:lang="en">
                 http://torrent-updater.goooseman.ru/en/release-notes/2-1-1.html
