@@ -6,6 +6,17 @@
         <description>Torrent Updater.app update channel</description>
         <language>en</language>
         <item>
+            <title>Version 2.1.1</title>
+            <sparkle:releaseNotesLink xml:lang="en">
+                http://torrent-updater.goooseman.ru/en/release-notes/2-1-1.html
+            </sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ru">
+                http://torrent-updater.goooseman.ru/ru/release-notes/2-1-1.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wed, 15 Sep 2015 18:00:11 +0000</pubDate>
+            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-1-1.zip" sparkle:version="2.1.1" length="914880" sparkle:dsaSignature="MC0CFBz5QF3MGXlMHF+hzbEscDbRBPAsAhUAhlzhVT04FJDHf2BqYp3u1/E37QU=" type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.1</title>
             <sparkle:releaseNotesLink xml:lang="en">
                 http://torrent-updater.goooseman.ru/en/release-notes/2-1.html
@@ -13,7 +24,7 @@
             <sparkle:releaseNotesLink xml:lang="ru">
                 http://torrent-updater.goooseman.ru/ru/release-notes/2-1.html
             </sparkle:releaseNotesLink>
-            <pubDate>Wed, 24 May 20014 14:00:11 +0000</pubDate>
+            <pubDate>Wed, 24 May 2014 14:00:11 +0000</pubDate>
             <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-1.zip" sparkle:version="2.1" length="1662244" sparkle:dsaSignature="MCwCFHPzoOkfgSMbYeMUslUZ7iODRxFgAhRLtEov4VPUTpmpb1+Mv30IjTaT4w==" type="application/octet-stream" />
         </item>
         <item>
@@ -24,7 +35,7 @@
             <sparkle:releaseNotesLink xml:lang="ru">
                 http://torrent-updater.goooseman.ru/ru/release-notes/2-0.html
             </sparkle:releaseNotesLink>
-            <pubDate>Wed, 26 Mar 20014 19:20:11 +0000</pubDate>
+            <pubDate>Wed, 26 Mar 2014 19:20:11 +0000</pubDate>
             <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-0.zip" sparkle:version="2.0" length="1653597" sparkle:dsaSignature="MC0CFQCDoAcZ1CVnzVvmQJpiDBkKuOkWlwIUGHIi0YkUBeEV1lcK7o1XlWnbWOU=" type="application/octet-stream" />
         </item>
     </channel>
