@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF1D9EC71BA8587700FC2E9A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1D9EC61BA8587700FC2E9A /* Sparkle.framework */; };
+		DF1465E61BA8706800BE9BCD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0D49A18DEAD0000CAE963 /* IOKit.framework */; };
+		DF1465E71BA8706E00BE9BCD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0D49818DEAC8E00CAE963 /* QuartzCore.framework */; };
+		DF1465E91BA870FC00BE9BCD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1465E81BA870FC00BE9BCD /* Sparkle.framework */; };
+		DF1465EA1BA870FC00BE9BCD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1465E81BA870FC00BE9BCD /* Sparkle.framework */; };
+		DF1EEF761BA87703002C1349 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF1465E81BA870FC00BE9BCD /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF1FC16118DD7404006BC200 /* GSTorrUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1FC16018DD7404006BC200 /* GSTorrUpdate.m */; };
 		DF1FC16418DD9CC8006BC200 /* GSTorrDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1FC16318DD9CC8006BC200 /* GSTorrDownload.m */; };
 		DF35600518E4252400216015 /* GSUpdateSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DF35600318E4252400216015 /* GSUpdateSettings.m */; };
@@ -35,14 +39,12 @@
 		DF6E237518DC46F8008F7600 /* GSNumberTextFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E237418DC46F8008F7600 /* GSNumberTextFormatter.m */; };
 		DF6E237B18DC4EA1008F7600 /* GSTorrentsGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E237A18DC4EA1008F7600 /* GSTorrentsGetter.m */; };
 		DF6E237E18DC4F80008F7600 /* GSTorrentsSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E237D18DC4F80008F7600 /* GSTorrentsSetter.m */; };
-		DFA0D49918DEAC8E00CAE963 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0D49818DEAC8E00CAE963 /* QuartzCore.framework */; };
 		DFA0D49F18DEC44500CAE963 /* GSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA0D49E18DEC44500CAE963 /* GSAdditions.m */; };
 		DFA10AE318E6AED700CB5275 /* GSShowDockController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA10AE218E6AED700CB5275 /* GSShowDockController.m */; };
 		DFA10AE818E6AF0600CB5275 /* GSDownloadLocationEnabledController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA10AE518E6AF0600CB5275 /* GSDownloadLocationEnabledController.m */; };
 		DFA10AE918E6AF0600CB5275 /* GSStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA10AE718E6AF0600CB5275 /* GSStatusItemController.m */; };
 		DFA10AEC18E6B1EA00CB5275 /* GSHyperlinkTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA10AEB18E6B1EA00CB5275 /* GSHyperlinkTextField.m */; };
 		DFAF817618E4474E009866BA /* GSAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAF817518E4474E009866BA /* GSAnalytics.m */; };
-		DFAF817718E44D1D009866BA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0D49A18DEAD0000CAE963 /* IOKit.framework */; };
 		DFBE38F618E6D12200734B84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFBE38F818E6D12200734B84 /* Localizable.strings */; };
 		DFBE38FD18E6D76C00734B84 /* GSGeneralSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE38FF18E6D76C00734B84 /* GSGeneralSettings.xib */; };
 		DFBE390618E6D91600734B84 /* GSUpdateSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE390818E6D91600734B84 /* GSUpdateSettings.xib */; };
@@ -61,8 +63,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DF1EEF751BA876FC002C1349 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF1EEF761BA87703002C1349 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		DF1D9EC61BA8587700FC2E9A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "Torrent Updater/External/Sparkle.framework"; sourceTree = "<group>"; };
+		DF1465E81BA870FC00BE9BCD /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "Torrent Updater/External/Sparkle.framework"; sourceTree = "<group>"; };
 		DF1FC15F18DD7404006BC200 /* GSTorrUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTorrUpdate.h; path = Models/Torrent/GSTorrUpdate.h; sourceTree = "<group>"; };
 		DF1FC16018DD7404006BC200 /* GSTorrUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTorrUpdate.m; path = Models/Torrent/GSTorrUpdate.m; sourceTree = "<group>"; };
 		DF1FC16218DD9CC8006BC200 /* GSTorrDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTorrDownload.h; path = Models/Common/GSTorrDownload.h; sourceTree = "<group>"; };
@@ -146,10 +161,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFAF817718E44D1D009866BA /* IOKit.framework in Frameworks */,
-				DFA0D49918DEAC8E00CAE963 /* QuartzCore.framework in Frameworks */,
+				DF1465E71BA8706E00BE9BCD /* QuartzCore.framework in Frameworks */,
+				DF1465E61BA8706800BE9BCD /* IOKit.framework in Frameworks */,
 				DF6B53CE18D81F76009EA59E /* Cocoa.framework in Frameworks */,
-				DF1D9EC71BA8587700FC2E9A /* Sparkle.framework in Frameworks */,
+				DF1465E91BA870FC00BE9BCD /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF6B53EE18D81F76009EA59E /* Cocoa.framework in Frameworks */,
+				DF1465EA1BA870FC00BE9BCD /* Sparkle.framework in Frameworks */,
 				DF6B53ED18D81F76009EA59E /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +214,7 @@
 		DF6B53CC18D81F76009EA59E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF1D9EC61BA8587700FC2E9A /* Sparkle.framework */,
+				DF1465E81BA870FC00BE9BCD /* Sparkle.framework */,
 				DFA0D49A18DEAD0000CAE963 /* IOKit.framework */,
 				DFA0D49818DEAC8E00CAE963 /* QuartzCore.framework */,
 				DF6B53CD18D81F76009EA59E /* Cocoa.framework */,
@@ -373,6 +389,7 @@
 				DF6B53C618D81F76009EA59E /* Sources */,
 				DF6B53C718D81F76009EA59E /* Frameworks */,
 				DF6B53C818D81F76009EA59E /* Resources */,
+				DF1EEF751BA876FC002C1349 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -652,6 +669,9 @@
 					"${SRCROOT}/Torrent\\ Updater",
 					"${SRCROOT}/Torrent\\ Updater/External/**",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Torrent",
+					Updater/External,
+					"/Volumes/DATA/Users/goooseman/Downloads/Sparkle-1.11.0",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Torrent Updater/Torrent Updater-Prefix.pch";
@@ -660,7 +680,7 @@
 					"$(inherited)",
 					"${SRCROOT}/Torrent\\ Updater/External",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -676,6 +696,9 @@
 					"$(inherited)",
 					"${SRCROOT}/Torrent\\ Updater",
 					"${SRCROOT}/Torrent\\ Updater/External",
+					"$(PROJECT_DIR)/Torrent",
+					Updater/External,
+					"/Volumes/DATA/Users/goooseman/Downloads/Sparkle-1.11.0",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Torrent Updater/Torrent Updater-Prefix.pch";
@@ -684,7 +707,7 @@
 					"$(inherited)",
 					"${SRCROOT}/Torrent\\ Updater/External",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -699,6 +722,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Torrent",
+					Updater/External,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Torrent Updater/Torrent Updater-Prefix.pch";
@@ -721,6 +746,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Torrent",
+					Updater/External,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Torrent Updater/Torrent Updater-Prefix.pch";

@@ -92,7 +92,7 @@
 		<key>needLogin</key>
 		<true/>
 		<key>downloadURL</key>
-		<string>http://kinozal.tv/download.php/%1$@/[kinozal.tv]%1$@.torrent</string>
+		<string>http://dl.kinozal.tv/download.php?id=%@</string>
 		<key>name</key>
 		<string>Kinozal.tv</string>
 		<key>order</key>
