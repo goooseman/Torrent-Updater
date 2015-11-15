@@ -56,21 +56,25 @@ static GSExtra *_sharedInstance = nil;
 }
 
 +(BOOL)checkInternet {
-    NSString *dataString = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://ya.ru"] encoding:NSWindowsCP1251StringEncoding error:nil];
+    NSString *dataString = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://google.com"] encoding:NSWindowsCP1251StringEncoding error:nil];
     
-    if (dataString && [dataString containsString:@"yandex"])
+    if (dataString && [dataString containsString:@"google"])
         return YES;
     else {
+        
         return NO;
     }
     
 }
 
 -(BOOL)checkInternetAndShowError {
-    NSString *dataString = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://ya.ru"] encoding:NSWindowsCP1251StringEncoding error:nil];
-    if (dataString && [dataString containsString:@"yandex"]) {
+    NSLog(@"Checking Internet");
+    NSString *dataString = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://google.com"] encoding:NSWindowsCP1251StringEncoding error:nil];
+
+    if (dataString && [dataString containsString:@"google"]) {
         return YES;
     } else {
+        
         [[[NSApplication sharedApplication] delegate] performSelector:@selector(stopLoadingIndicatorWithMessage:) withObject:NSLocalizedString(@"No Internet Connection", nil)];
         return NO;
     }

@@ -22,7 +22,7 @@
     return self;
 }
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {    
     [GSSettings setDefaults];
     [[[GSShowDockController alloc] init] setShowDock:[[[GSSettings alloc] init]._showDock boolValue]];
     [[GSStatusItemController sharedInstance] setMenuItem:[[[GSSettings alloc] init]._menuItem boolValue] withMenu:_statusMenu];
@@ -42,7 +42,6 @@
     [_appLink setHyperlinkTextFieldWithText:@"http://torrent-updater.goooseman.ru" andLink:@"http://torrent-updater.goooseman.ru"];
     [_contactAuthor setHyperlinkTextFieldWithText:NSLocalizedString(@"Contact Author", nil) andLink:@"mailto:rutrackerupd@goooseman.ru"];
     [_olenyev setHyperlinkTextFieldWithText:@"olenyev" andLink:@"https://twitter.com/olenyevtweet"];
-    
 }
 
 -(void)applicationShouldTerminateAfterLastWindowClosed {
