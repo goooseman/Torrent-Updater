@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.1" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Torrent Updater's Changelog</title>
+        <link>http://torrent-updater.goooseman.ru/appcast.xml</link>
+        <description>Torrent Updater.app update channel</description>
+        <language>en</language>
+        <item>
+            <title>Version 2.1.4</title>
+            <sparkle:releaseNotesLink xml:lang="en">
+                http://torrent-updater.goooseman.ru/en/release-notes/2-1-4.html
+            </sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ru">
+                http://torrent-updater.goooseman.ru/ru/release-notes/2-1-4.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wed, 15 Nov 2015 10:00:11 +0000</pubDate>
+            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-1-4.zip" sparkle:version="2.1.4" length="2337440" sparkle:dsaSignature="MC0CFDibXtToAN156w9G6SaVGQw3jrBgAhUAs1iWiZtrqQyTvXj56Or22izI7rA=" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.1.3</title>
+            <sparkle:releaseNotesLink xml:lang="en">
+                http://torrent-updater.goooseman.ru/en/release-notes/2-1-3.html
+            </sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ru">
+                http://torrent-updater.goooseman.ru/ru/release-notes/2-1-3.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wed, 15 Sep 2015 21:00:11 +0000</pubDate>
+            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-1-3.zip" sparkle:version="2.1.3" length="2011481" sparkle:dsaSignature="MCwCFGRzFIGDhlAFzA3VJ95KwuU/aymgAhRqZ+TUXJqPz3k8xgPYhu/xKD2pew==" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.1.2</title>
+            <sparkle:releaseNotesLink xml:lang="en">
+                http://torrent-updater.goooseman.ru/en/release-notes/2-1-2.html
+            </sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ru">
+                http://torrent-updater.goooseman.ru/ru/release-notes/2-1-2.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wed, 15 Sep 2015 20:00:11 +0000</pubDate>
+            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-1-2.zip" sparkle:version="2.1.2" length="2011501" sparkle:dsaSignature="MCwCFAOEhznD/WJZRhjQ8pbyS0za9HbvAhR4c+E4YYsByHIyGw+J4whVhBbYzA" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.1.1</title>
+            <sparkle:releaseNotesLink xml:lang="en">
+                http://torrent-updater.goooseman.ru/en/release-notes/2-1-1.html
+            </sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ru">
+                http://torrent-updater.goooseman.ru/ru/release-notes/2-1-1.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wed, 15 Sep 2015 18:00:11 +0000</pubDate>
+            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-1-1.zip" sparkle:version="2.1.1" length="914880" sparkle:dsaSignature="MC0CFBz5QF3MGXlMHF+hzbEscDbRBPAsAhUAhlzhVT04FJDHf2BqYp3u1/E37QU=" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.1</title>
+            <sparkle:releaseNotesLink xml:lang="en">
+                http://torrent-updater.goooseman.ru/en/release-notes/2-1.html
+            </sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ru">
+                http://torrent-updater.goooseman.ru/ru/release-notes/2-1.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wed, 24 May 2014 14:00:11 +0000</pubDate>
+            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-1.zip" sparkle:version="2.1" length="1662244" sparkle:dsaSignature="MCwCFHPzoOkfgSMbYeMUslUZ7iODRxFgAhRLtEov4VPUTpmpb1+Mv30IjTaT4w==" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.0 (initial release)</title>
+            <sparkle:releaseNotesLink xml:lang="en">
+                http://torrent-updater.goooseman.ru/en/release-notes/2-0.html
+            </sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink xml:lang="ru">
+                http://torrent-updater.goooseman.ru/ru/release-notes/2-0.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wed, 26 Mar 2014 19:20:11 +0000</pubDate>
+            <enclosure url="http://torrent-updater.goooseman.ru/versions/torrent-updater-2-0.zip" sparkle:version="2.0" length="1653597" sparkle:dsaSignature="MC0CFQCDoAcZ1CVnzVvmQJpiDBkKuOkWlwIUGHIi0YkUBeEV1lcK7o1XlWnbWOU=" type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>

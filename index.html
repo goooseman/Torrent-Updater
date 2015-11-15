@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Redirecting...</title>
+
+    <script type="text/javascript">
+    var langcodes = new Array('ru', 'en', 'default');
+    var langredirects = new Array('/ru/', '/en/', '/en/');
+
+    var languageinfo = navigator.language ? navigator.language : navigator.userLanguage;
+    var gotodefault = 1;
+
+    function redirectpage(dest) {
+      // if (window.location.replace)
+      //   window.location.replace(dest);
+      // else
+      //   window.location = dest;
+      window.location.href = dest;
+    }
+
+    for (i = 0; i < langcodes.length - 1; i++) {
+      if (languageinfo.substr(0, 2) == langcodes[i]) {
+        redirectpage(langredirects[i]);
+        gotodefault = 0;
+        break;
+      }
+    }
+
+    if (gotodefault)
+      redirectpage(langredirects[langcodes.length - 1]);
+    </script>
+  </head>
+</html>

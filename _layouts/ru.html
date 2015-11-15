@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Программа для Mac OS X для отслеживания торрентов">
+    <meta name="author" content="goooseman">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="/favicon.ico">
+    <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+
+    <!-- IE 10 Metro tile icon (Metro equivalent of apple-touch-icon): -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/apple-touch-icon-144x144-precomposed.png">
+    <!-- Opera Speed Dial icon -->
+    <link rel="icon" sizes="195x195" href="/favicon-195.png">
+    <!-- IE 11 live tiles: -->
+    <meta name="msapplication-square70x70logo" content="/favicon-70.png" />
+    <meta name="msapplication-square150x150logo" content="/favicon-150.png" />
+    <meta name="msapplication-square310x310logo" content="/favicon-310.png" />
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed">
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <!-- For the iPad mini and the first- and second-generation iPad on iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76-precomposed.png">
+    <!-- For the iPad mini and the first- and second-generation iPad on iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="background"></div>
+    <a href="https://plus.google.com/109412257237874861202?
+       rel=author" class="hidden">Google</a>
+    <a href="https://github.com/goooseman/Torrent-Updater">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+    </a>
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container" id="wrap">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Torrent Updater</h3>
+                        <ul class="nav masthead-nav">
+                            <li {% if page.active == "index" %} class="active" {% endif %}><a href="/ru/">Главная</a>
+                            </li>
+                            <li {% if page.active == "changelog" %} class="active" {% endif %}><a href="/ru/changelog.html">Изменения</a>
+                            </li>
+                            <li {% if page.active == "screenshots" %} class="active" {% endif %}><a href="/ru/screenshots.html">Скриншоты</a>
+                            </li>
+                            <li {% if page.active == "contact" %} class="active" {% endif %}><a href="/ru/contact.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                {{ content }}
+
+
+
+                <div class="mastfoot">
+                    <div class="mastfoot-container">
+                        <p>
+                            Copyright 2014 © <a href="http://goooseman.ru" target="_blank">goooseman.ru</a>
+                        </p>
+                        <p><a href="/en/{{page.active}}.html">English version</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="/js/jquery.turbolinks.js"></script>
+    <!-- <script type="text/javascript" src="/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="/js/spin.min.js"></script>
+    <script type="text/javascript" src="/js/my.js"></script>
+    <script type="text/javascript" src="/js/turbolinks.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
