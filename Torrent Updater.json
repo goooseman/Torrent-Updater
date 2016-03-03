@@ -1,0 +1,12 @@
+{
+  "title": "Torrent Updater",
+  "app": "Torrent Updater.app",
+  "background": "bg.png",
+  "icon": "icon.png",
+  "icons": {
+    "size": 80,
+    "app": [192, 200],
+    "alias": [448, 200]
+  }
+}
+
