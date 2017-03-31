@@ -44,7 +44,7 @@
 		<key>needLogin</key>
 		<true/>
 		<key>downloadURL</key>
-		<string>http://dl.rutracker.org/forum/dl.php?t=%@</string>
+		<string>https://rutracker.org/forum/dl.php?t=%@</string>
 		<key>name</key>
 		<string>RuTracker.org</string>
 		<key>order</key>
@@ -69,9 +69,9 @@
 			<string>дек</string>
 		</array>
 		<key>modifiedParseStart</key>
-		<string>&lt;span title=&quot;Когда зарегистрирован&quot;&gt;[ </string>
+		<string>&lt;td style=&quot;width: 70%; padding: 5px;&quot;&gt;</string>
 		<key>modifiedParseEnd</key>
-		<string> ]&lt;/span&gt;</string>
+		<string>&lt;/td&gt;</string>
 		<key>removeInTitle</key>
 		<string> :: RuTracker.org (ex torrents.ru)</string>
 		<key>titleSeparator</key>

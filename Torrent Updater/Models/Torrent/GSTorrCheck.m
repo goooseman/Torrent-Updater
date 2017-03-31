@@ -15,7 +15,7 @@
     if (NSAppKitVersionNumber > NSAppKitVersionNumber10_10_Max) {
         NSLog(@"El Capitain!");
     
-        NSArray* cookies = [[NSHTTPCookieStorage sharedCookieStorageForGroupContainerIdentifier:@"Cookies"] cookiesForURL:[NSURL URLWithString:@"http://rutracker.org/forum/index.php"]];
+        NSArray* cookies = [[NSHTTPCookieStorage sharedCookieStorageForGroupContainerIdentifier:@"Cookies"] cookiesForURL:[NSURL URLWithString:@"https://rutracker.org/forum/index.php"]];
         for (NSHTTPCookie* cookie in cookies) {
             [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
         }
