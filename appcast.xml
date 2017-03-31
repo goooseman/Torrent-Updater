@@ -6,7 +6,7 @@
         <description>Torrent Updater.app update channel</description>
         <language>en</language>
         <item>
-            <title>Version 2.1.5/title>
+            <title>Version 2.1.5</title>
             <sparkle:releaseNotesLink xml:lang="en">
                 http://torrent-updater.goooseman.ru/en/release-notes/2-1-5.html
             </sparkle:releaseNotesLink>
